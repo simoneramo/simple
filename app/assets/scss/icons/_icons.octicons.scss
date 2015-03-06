@@ -1,0 +1,723 @@
+$use-icons-octicons:	true !default;
+
+@if $use-icons-octicons == true{
+	/* ==========================================================================
+   Icon - Icons Eighty
+
+   Prefix i for icons
+   ========================================================================== */
+
+	// font family
+	[class^="i-octicons"], [class*=" i-octicons"] {
+			font-family:$ff-family-2;
+	}
+
+	.i-octicons-alert:before {
+		content: "\f02d";
+	}
+
+	.i-octicons-alignment-align:before {
+		content: "\f08a";
+	}
+
+	.i-octicons-alignment-aligned-to:before {
+		content: "\f08e";
+	}
+
+	.i-octicons-alignment-unalign:before {
+		content: "\f08b";
+	}
+
+	.i-octicons-arrow-down:before {
+		content: "\f03f";
+	}
+
+	.i-octicons-arrow-left:before {
+		content: "\f040";
+	}
+
+	.i-octicons-arrow-right:before {
+		content: "\f03e";
+	}
+
+	.i-octicons-arrow-small-down:before {
+		content: "\f0a0";
+	}
+
+	.i-octicons-arrow-small-left:before {
+		content: "\f0a1";
+	}
+
+	.i-octicons-arrow-small-right:before {
+		content: "\f071";
+	}
+
+	.i-octicons-arrow-small-up:before {
+		content: "\f09f";
+	}
+
+	.i-octicons-arrow-up:before {
+		content: "\f03d";
+	}
+
+	.i-octicons-beer:before {
+		content: "\f069";
+	}
+
+	.i-octicons-book:before {
+		content: "\f007";
+	}
+
+	.i-octicons-bookmark:before {
+		content: "\f07b";
+	}
+
+	.i-octicons-briefcase:before {
+		content: "\f0d3";
+	}
+
+	.i-octicons-broadcast:before {
+		content: "\f048";
+	}
+
+	.i-octicons-browser:before {
+		content: "\f0c5";
+	}
+
+	.i-octicons-bug:before {
+		content: "\f091";
+	}
+
+	.i-octicons-calendar:before {
+		content: "\f068";
+	}
+
+	.i-octicons-check:before {
+		content: "\f03a";
+	}
+
+	.i-octicons-checklist:before {
+		content: "\f076";
+	}
+
+	.i-octicons-chevron-down:before {
+		content: "\f0a3";
+	}
+
+	.i-octicons-chevron-left:before {
+		content: "\f0a4";
+	}
+
+	.i-octicons-chevron-right:before {
+		content: "\f078";
+	}
+
+	.i-octicons-chevron-up:before {
+		content: "\f0a2";
+	}
+
+	.i-octicons-circle-slash:before {
+		content: "\f084";
+	}
+
+	.i-octicons-circuit-board:before {
+		content: "\f0d6";
+	}
+
+	.i-octicons-clippy:before {
+		content: "\f035";
+	}
+
+	.i-octicons-clock:before {
+		content: "\f046";
+	}
+
+	.i-octicons-cloud-download:before {
+		content: "\f00b";
+	}
+
+	.i-octicons-cloud-upload:before {
+		content: "\f00c";
+	}
+
+	.i-octicons-code:before {
+		content: "\f05f";
+	}
+
+	.i-octicons-color-mode:before {
+		content: "\f065";
+	}
+
+	.i-octicons-comment:before {
+		content: "\f02b";
+	}
+
+	.i-octicons-comment-discussion:before {
+		content: "\f04f";
+	}
+
+	.i-octicons-credit-card:before {
+		content: "\f045";
+	}
+
+	.i-octicons-dash:before {
+		content: "\f0ca";
+	}
+
+	.i-octicons-dashboard:before {
+		content: "\f07d";
+	}
+
+	.i-octicons-database:before {
+		content: "\f096";
+	}
+
+	.i-octicons-device-camera:before {
+		content: "\f056";
+	}
+
+	.i-octicons-device-camera-video:before {
+		content: "\f057";
+	}
+
+	.i-octicons-device-desktop:before {
+		content: "\f27c";
+	}
+
+	.i-octicons-device-mobile:before {
+		content: "\f038";
+	}
+
+	.i-octicons-diff:before {
+		content: "\f04d";
+	}
+
+	.i-octicons-diff-added:before {
+		content: "\f06b";
+	}
+
+	.i-octicons-diff-ignored:before {
+		content: "\f099";
+	}
+
+	.i-octicons-diff-modified:before {
+		content: "\f06d";
+	}
+
+	.i-octicons-diff-removed:before {
+		content: "\f06c";
+	}
+
+	.i-octicons-diff-renamed:before {
+		content: "\f06e";
+	}
+
+	.i-octicons-ellipsis:before {
+		content: "\f09a";
+	}
+
+	.i-octicons-eye:before {
+		content: "\f04e";
+	}
+
+	.i-octicons-file-binary:before {
+		content: "\f094";
+	}
+
+	.i-octicons-file-code:before {
+		content: "\f010";
+	}
+
+	.i-octicons-file-directory:before {
+		content: "\f016";
+	}
+
+	.i-octicons-file-media:before {
+		content: "\f012";
+	}
+
+	.i-octicons-file-pdf:before {
+		content: "\f014";
+	}
+
+	.i-octicons-file-submodule:before {
+		content: "\f017";
+	}
+
+	.i-octicons-file-symlink-directory:before {
+		content: "\f0b1";
+	}
+
+	.i-octicons-file-symlink-file:before {
+		content: "\f0b0";
+	}
+
+	.i-octicons-file-text:before {
+		content: "\f011";
+	}
+
+	.i-octicons-file-zip:before {
+		content: "\f013";
+	}
+
+	.i-octicons-flame:before {
+		content: "\f0d2";
+	}
+
+	.i-octicons-fold:before {
+		content: "\f0cc";
+	}
+
+	.i-octicons-gear:before {
+		content: "\f02f";
+	}
+
+	.i-octicons-gift:before {
+		content: "\f042";
+	}
+
+	.i-octicons-gist:before {
+		content: "\f00e";
+	}
+
+	.i-octicons-gist-secret:before {
+		content: "\f08c";
+	}
+
+	.i-octicons-git-branch:before {
+		content: "\f020";
+	}
+
+	.i-octicons-git-commit:before {
+		content: "\f01f";
+	}
+
+	.i-octicons-git-compare:before {
+		content: "\f0ac";
+	}
+
+	.i-octicons-git-merge:before {
+		content: "\f023";
+	}
+
+	.i-octicons-git-pull-request:before {
+		content: "\f009";
+	}
+
+	.i-octicons-globe:before {
+		content: "\f0b6";
+	}
+
+	.i-octicons-graph:before {
+		content: "\f043";
+	}
+
+	.i-octicons-heart:before {
+		content: "\2665";
+	}
+
+	.i-octicons-history:before {
+		content: "\f07e";
+	}
+
+	.i-octicons-home:before {
+		content: "\f08d";
+	}
+
+	.i-octicons-horizontal-rule:before {
+		content: "\f070";
+	}
+
+	.i-octicons-hourglass:before {
+		content: "\f09e";
+	}
+
+	.i-octicons-hubot:before {
+		content: "\f09d";
+	}
+
+	.i-octicons-inbox:before {
+		content: "\f0cf";
+	}
+
+	.i-octicons-info:before {
+		content: "\f059";
+	}
+
+	.i-octicons-issue-closed:before {
+		content: "\f028";
+	}
+
+	.i-octicons-issue-opened:before {
+		content: "\f026";
+	}
+
+	.i-octicons-issue-reopened:before {
+		content: "\f027";
+	}
+
+	.i-octicons-jersey:before {
+		content: "\f019";
+	}
+
+	.i-octicons-jump-down:before {
+		content: "\f072";
+	}
+
+	.i-octicons-jump-left:before {
+		content: "\f0a5";
+	}
+
+	.i-octicons-jump-right:before {
+		content: "\f0a6";
+	}
+
+	.i-octicons-jump-up:before {
+		content: "\f073";
+	}
+
+	.i-octicons-key:before {
+		content: "\f049";
+	}
+
+	.i-octicons-keyboard:before {
+		content: "\f00d";
+	}
+
+	.i-octicons-law:before {
+		content: "\f0d8";
+	}
+
+	.i-octicons-light-bulb:before {
+		content: "\f000";
+	}
+
+	.i-octicons-link:before {
+		content: "\f05c";
+	}
+
+	.i-octicons-link-external:before {
+		content: "\f07f";
+	}
+
+	.i-octicons-list-ordered:before {
+		content: "\f062";
+	}
+
+	.i-octicons-list-unordered:before {
+		content: "\f061";
+	}
+
+	.i-octicons-location:before {
+		content: "\f060";
+	}
+
+	.i-octicons-lock:before {
+		content: "\f06a";
+	}
+
+	.i-octicons-logo-github:before {
+		content: "\f092";
+	}
+
+	.i-octicons-mail:before {
+		content: "\f03b";
+	}
+
+	.i-octicons-mail-read:before {
+		content: "\f03c";
+	}
+
+	.i-octicons-mail-reply:before {
+		content: "\f051";
+	}
+
+	.i-octicons-mark-github:before {
+		content: "\f00a";
+	}
+
+	.i-octicons-markdown:before {
+		content: "\f0c9";
+	}
+
+	.i-octicons-megaphone:before {
+		content: "\f077";
+	}
+
+	.i-octicons-mention:before {
+		content: "\f0be";
+	}
+
+	.i-octicons-microscope:before {
+		content: "\f089";
+	}
+
+	.i-octicons-milestone:before {
+		content: "\f075";
+	}
+
+	.i-octicons-mirror:before {
+		content: "\f024";
+	}
+
+	.i-octicons-mortar-board:before {
+		content: "\f0d7";
+	}
+
+	.i-octicons-move-down:before {
+		content: "\f0a8";
+	}
+
+	.i-octicons-move-left:before {
+		content: "\f074";
+	}
+
+	.i-octicons-move-right:before {
+		content: "\f0a9";
+	}
+
+	.i-octicons-move-up:before {
+		content: "\f0a7";
+	}
+
+	.i-octicons-mute:before {
+		content: "\f080";
+	}
+
+	.i-octicons-no-newline:before {
+		content: "\f09c";
+	}
+
+	.i-octicons-octoface:before {
+		content: "\f008";
+	}
+
+	.i-octicons-organization:before {
+		content: "\f037";
+	}
+
+	.i-octicons-package:before {
+		content: "\f0c4";
+	}
+
+	.i-octicons-paintcan:before {
+		content: "\f0d1";
+	}
+
+	.i-octicons-pencil:before {
+		content: "\f058";
+	}
+
+	.i-octicons-person:before {
+		content: "\f018";
+	}
+
+	.i-octicons-pin:before {
+		content: "\f041";
+	}
+
+	.i-octicons-playback-fast-forward:before {
+		content: "\f0bd";
+	}
+
+	.i-octicons-playback-pause:before {
+		content: "\f0bb";
+	}
+
+	.i-octicons-playback-play:before {
+		content: "\f0bf";
+	}
+
+	.i-octicons-playback-rewind:before {
+		content: "\f0bc";
+	}
+
+	.i-octicons-plug:before {
+		content: "\f0d4";
+	}
+
+	.i-octicons-plus:before {
+		content: "\f05d";
+	}
+
+	.i-octicons-podium:before {
+		content: "\f0af";
+	}
+
+	.i-octicons-primitive-dot:before {
+		content: "\f052";
+	}
+
+	.i-octicons-primitive-square:before {
+		content: "\f053";
+	}
+
+	.i-octicons-pulse:before {
+		content: "\f085";
+	}
+
+	.i-octicons-puzzle:before {
+		content: "\f0c0";
+	}
+
+	.i-octicons-question:before {
+		content: "\f02c";
+	}
+
+	.i-octicons-quote:before {
+		content: "\f063";
+	}
+
+	.i-octicons-radio-tower:before {
+		content: "\f030";
+	}
+
+	.i-octicons-repo:before {
+		content: "\f001";
+	}
+
+	.i-octicons-repo-clone:before {
+		content: "\f04c";
+	}
+
+	.i-octicons-repo-force-push:before {
+		content: "\f04a";
+	}
+
+	.i-octicons-repo-forked:before {
+		content: "\f002";
+	}
+
+	.i-octicons-repo-pull:before {
+		content: "\f006";
+	}
+
+	.i-octicons-repo-push:before {
+		content: "\f005";
+	}
+
+	.i-octicons-rocket:before {
+		content: "\f033";
+	}
+
+	.i-octicons-rss:before {
+		content: "\f034";
+	}
+
+	.i-octicons-ruby:before {
+		content: "\f047";
+	}
+
+	.i-octicons-screen-full:before {
+		content: "\f066";
+	}
+
+	.i-octicons-screen-normal:before {
+		content: "\f067";
+	}
+
+	.i-octicons-search:before {
+		content: "\f02e";
+	}
+
+	.i-octicons-server:before {
+		content: "\f097";
+	}
+
+	.i-octicons-settings:before {
+		content: "\f07c";
+	}
+
+	.i-octicons-sign-in:before {
+		content: "\f036";
+	}
+
+	.i-octicons-sign-out:before {
+		content: "\f032";
+	}
+
+	.i-octicons-split:before {
+		content: "\f0c6";
+	}
+
+	.i-octicons-squirrel:before {
+		content: "\f0b2";
+	}
+
+	.i-octicons-star:before {
+		content: "\f02a";
+	}
+
+	.i-octicons-steps:before {
+		content: "\f0c7";
+	}
+
+	.i-octicons-stop:before {
+		content: "\f08f";
+	}
+
+	.i-octicons-sync:before {
+		content: "\f087";
+	}
+
+	.i-octicons-tag:before {
+		content: "\f015";
+	}
+
+	.i-octicons-telescope:before {
+		content: "\f088";
+	}
+
+	.i-octicons-terminal:before {
+		content: "\f0c8";
+	}
+
+	.i-octicons-three-bars:before {
+		content: "\f05e";
+	}
+
+	.i-octicons-tools:before {
+		content: "\f031";
+	}
+
+	.i-octicons-trashcan:before {
+		content: "\f0d0";
+	}
+
+	.i-octicons-triangle-down:before {
+		content: "\f05b";
+	}
+
+	.i-octicons-triangle-left:before {
+		content: "\f044";
+	}
+
+	.i-octicons-triangle-right:before {
+		content: "\f05a";
+	}
+
+	.i-octicons-triangle-up:before {
+		content: "\f0aa";
+	}
+
+	.i-octicons-unfold:before {
+		content: "\f039";
+	}
+
+	.i-octicons-unmute:before {
+		content: "\f0ba";
+	}
+
+	.i-octicons-versions:before {
+		content: "\f064";
+	}
+
+	.i-octicons-x:before {
+		content: "\f081";
+	}
+
+	.i-octicons-zap:before {
+		content: "\26a1";
+	}
+
+} //end if

@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Mixin - Center Content
+
+   css:
+   -----
+   .class-name{
+     @include center-content;
+     width: {needed};
+   }
+
+   ========================================================================== */
+
+@mixin center-content{
+	margin-left: auto;
+	margin-right: auto;
+}

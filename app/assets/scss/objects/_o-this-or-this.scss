@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Common Objects - This or This
+   ========================================================================== */
+
+  .o-this-or-this{
+    display: table;
+    width: 100%;
+    text-align: center;
+
+    &__cols {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+  }

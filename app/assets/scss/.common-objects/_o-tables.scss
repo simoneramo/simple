@@ -1,0 +1,76 @@
+$use-objects-tables:  true !default;
+
+@if $use-objects-tables == true{
+/* ==========================================================================
+   Common Objects - Tables
+   ========================================================================== */
+
+  // object
+  @include object(o-table) {
+    width:100%;
+    th, td{
+      padding: $space;
+      text-align:left;
+    }
+
+    // modifier
+    @include modifier(bordered) {
+      th, td{
+        border:1px solid $c-object;
+        &:empty{
+          border:none;
+        }
+      }
+      thead tr:last-child th{
+        border-bottom-width:1px;
+      }
+      tbody tr th:last-of-type{
+        border-right-width:1px;
+      }
+    }
+
+    // modifier
+    @include modifier(striped) {
+      tbody tr:nth-of-type(odd){
+        background-color: #f7f7f7;
+      }
+    }
+
+    // modifier
+    @include modifier(hover) {
+      > tbody > tr:hover > td,
+      > tbody > tr:hover > th {
+        color: $c-selection;
+        background-color: $bc-selection;
+        cursor: default;
+      }
+    }
+
+    // modifier
+    @include modifier(rwd) {
+      min-width: 280px; // adjust to your needs
+      th {
+        display: none;
+      }
+      td {
+        display: block;
+        &:before {
+          content: attr(data-th)": ";
+          font-weight: bold;
+          width: 7.5em;
+          display: inline-block;
+          @media (min-width: 480px) {
+            display: none;
+          }
+        }
+      }
+      th, td {
+        @media (min-width: 480px) {
+          display: table-cell;
+        }
+      }
+    }
+
+  }
+
+}//endif

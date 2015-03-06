@@ -1,0 +1,34 @@
+  /* ==========================================================================
+   Common Object - Social Rules
+   ========================================================================== */
+
+  .o-rule {
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    color: $c-object;
+  }
+
+    .o-rule--dotted {
+      border-bottom-style: dotted;
+    }
+
+    .o-rule--dashed {
+      border-bottom-style: dashed;
+    }
+
+    .o-rule--ornament {
+      position:relative;
+      &:after{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        content: "†";
+        text-align: center;
+        line-height: 0;
+      }
+      &[data-ornament]:after{
+        content:attr(data-ornament);
+      }
+    }

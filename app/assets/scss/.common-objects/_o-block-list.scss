@@ -1,0 +1,41 @@
+$use-objects-block-list:  true !default;
+
+@if $use-objects-block-list == true{
+/* ==========================================================================
+   Common Objects - Block List
+   ========================================================================== */
+
+  // object
+  @include object(o-block-list) {
+    @include unstyled;
+
+    > li, > dd, > dt{
+      padding: $space;
+    }
+
+    > dt{
+      padding-bottom: 0;
+    }
+
+    // element
+    @include modifier(bordered) {
+      border:0 solid $c-object;
+      border-top-width:1px;
+      border-left-width:1px;
+      border-right-width:1px;
+
+      > li, > dd{
+        border:0 solid $c-object;
+        border-bottom-width:1px;
+        padding:$space;
+      }
+
+    }
+
+    // element
+    @include element(link) {
+     @include link-block-space;
+    }
+  }
+
+}//endif

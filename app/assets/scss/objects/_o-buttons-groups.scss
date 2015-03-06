@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Common Objects - Buttons Groups
+   ========================================================================== */
+
+
+  .o-btn-group {
+
+      .o-btn-group--round{
+        .o-btn{
+          &:first-child{
+            border-top-left-radius: 200px;
+            border-bottom-left-radius: 200px;
+          }
+          &:last-child{
+            border-top-right-radius: 200px;
+            border-bottom-right-radius: 200px;
+          }
+        }
+      }
+
+      .o-btn-group--rounded {
+        .o-btn{
+          &:first-child{
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+          }
+          &:last-child{
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+          }
+        }
+      }
+
+  }
+
+
+
+  .o-btn-toolbar {
+    display: inline-block;
+    .o-btn-toolbar__group {
+      float:left;
+      margin-right: $space-quarter;
+    }
+  }

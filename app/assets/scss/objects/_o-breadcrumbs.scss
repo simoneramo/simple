@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Common Objects - Breadcrumb
+   ========================================================================== */
+
+  // object
+  .o-breadcrumb {
+    > li + li:before{
+      content:"\00BB";
+      padding-left: $space-1-halve;
+      padding-right: $space-1-halve;
+    }
+  }
+
+
+    .o-breadcrumb--path {
+       > li + li:before{
+        content:"\002F";
+      }
+    }
+
+
+    .o-breadcrumb--line {
+      > li + li:before{
+        content:"\007C";
+      }
+    }
+
+
+    .o-breadcrumb--data {
+      > li + li[data-breadcrumb]:before{
+        content:attr(data-breadcrumb);
+      }
+    }
+
+
+    .o-breadcrumb--arrow {
+      overflow: hidden;
+
+      > a{
+        float: left;
+        &:first-child{ padding-left: 2.8em; }
+        &:last-child:after{ content: none; }
+      }
+
+      li{
+        &:first-of-type a{ padding-left: 2.8em; }
+        &:last-of-type a:after{ content: none; }
+      }
+
+      > li + li:before {
+        content: "";
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      a{
+        position: relative;
+        display: block;
+        padding: 0 3em 0 5em;
+        background: $c-object;
+        line-height: 3.875em;
+
+        &.is-active, &:hover, &.is-active:after, &:hover:after {
+          background-color: shade($c-object,10%);
+        }
+
+        &:after {
+          position: absolute;
+          top: 0;
+          right: -1em;
+          z-index: 1;
+          width: 3.875em;
+          height: 3.875em;
+          border-radius: 0 0 0 100%;
+          background: $c-object;
+          box-shadow: 0.188em -0.188em 0 0.188em $c-bgc-1, 0.188em -0.188em 0 0.188em $c-bgc-1;
+          content: '';
+          transform: scale(1) rotate(45deg);
+        }
+      }
+    }

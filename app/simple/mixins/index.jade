@@ -1,0 +1,64 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    include ../../_partials/site/compatibility-mode
+    title Simple Modules
+    include ../../_partials/site/description
+    include ../../_partials/site/meta-viewport
+
+    include ../../_partials/site/favicon
+    //- or
+
+    //- include ../../_partials/site/favicon-png
+
+    //-include ../../_partials/site/metaquery
+
+    //- include ../../_partials/site/icon-chrome-android
+
+    //- include ../../_partials/site/icon-safari-ios
+
+    //- include ../../_partials/site/icon-tile-win8
+
+    //- include ../../_partials/site/if-mobile-url
+
+    link(type='text/css', rel='stylesheet', href='../../assets/css/main.css')
+  body.s-simple
+    .l-simple-container(class='u-s-mt-2')
+      h1.u-fs-h1x.u-ta-center(class='u-s-mb-1/6') Simple Css
+      ul(class='o-nav  o-nav--banner  u-s-mb-4')
+        li
+          a(class='o-btn' href='../base') base
+        li
+          a(class='o-btn' href='../objects') objects
+        li
+          a(class='o-btn' href='../utilities') utilities
+        li
+          a(class='o-btn' href='../sink') sink
+        li
+          a(class='o-btn' href='../modules') modules
+        li
+          a(class='o-btn' href='../config') config
+        li
+          a(class='o-btn  u-s-active' href='../mixins') mixins
+
+      //- mixins
+      include ../../_partials/simple-partials/mixins/border-radius
+      include ../../_partials/simple-partials/mixins/gradient-left-right
+      include ../../_partials/simple-partials/mixins/center-content
+      include ../../_partials/simple-partials/mixins/clearfix
+      include ../../_partials/simple-partials/mixins/global-mb
+      include ../../_partials/simple-partials/mixins/headings
+      include ../../_partials/simple-partials/mixins/hidden
+      include ../../_partials/simple-partials/mixins/image-replace
+      include ../../_partials/simple-partials/mixins/invisible
+      include ../../_partials/simple-partials/mixins/reset-mb
+      include ../../_partials/simple-partials/mixins/sizing-vertical-rhythm
+      include ../../_partials/simple-partials/mixins/sr-only
+      include ../../_partials/simple-partials/mixins/list-unstyled
+      include ../../_partials/simple-partials/mixins/vertical-align
+      include ../../_partials/simple-partials/mixins/vertical-align-table
+      include ../../_partials/simple-partials/mixins/visually-hidden
+
+    include ../../_partials/site/scripts
+    include ../../_partials/site/analytics

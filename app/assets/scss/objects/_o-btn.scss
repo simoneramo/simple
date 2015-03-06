@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Common Object - Buttons
+   ========================================================================== */
+
+  .o-btn {
+    display:inline-block;
+    margin:0;
+    padding: 0 $space;
+    border:none;
+    background: $c-object;
+    vertical-align:middle;
+    white-space:nowrap;
+    font-size:100%;
+    font-family:inherit;
+    line-height: 2.4;
+    cursor: pointer;
+  }
+
+    .o-btn--small {
+      padding-right: $space-halve;
+      padding-left: $space-halve;
+      line-height: 1.8;
+    }
+
+    .o-btn--large {
+      padding-right: $space-1-halve;
+      padding-left: $space-1-halve;
+      line-height: 3.4;
+    }
+
+    .o-btn--huge {
+      padding-right: $space-2;
+      padding-left: $space-2;
+      line-height:4.4;
+    }
+
+    .o-btn--full {
+      padding-right:0;
+      padding-left: 0;
+      width:100%;
+      text-align:center;
+    }
+
+    .o-btn--natural {
+      padding-right: $space-1-halve;
+      padding-left: $space-1-halve;
+      vertical-align:baseline;
+      font-size:inherit;
+      line-height:inherit;
+    }
+
+    .o-btn--positive {
+      @extend %e-c-bgc-success;
+    }
+    .o-btn--negative {
+      @extend %e-c-bgc-error;
+    }
+
+    .o-btn--pill {
+      border-radius: 200px;
+    }
+
+    .o-btn--rounded {
+      border-radius: $button-round;
+    }
+
+    .o-btn--circle {
+      border-radius: 100%;
+      height: $space-8;
+      width: $space-8;
+      line-height: $space-8;
+      text-align: center;
+      padding: 0;
+    }
+
+    .o-btn--success {
+      @extend %e-c-bgc-success;
+    }
+
+    .o-btn--info {
+      @extend %e-c-bgc-info;
+    }
+
+    .o-btn--warning {
+      @extend %e-c-bgc-warning;
+    }
+
+    .o-btn--danger {
+      @extend %e-c-bgc-danger;
+    }
+
+    .o-btn--error {
+      @extend %e-c-bgc-error;
+    }
+
+    .o-btn--disable {
+      @extend %e-s-disable;
+    }
+
+    .o-btn--inactive {
+      @extend %e-s-disable;
+    }

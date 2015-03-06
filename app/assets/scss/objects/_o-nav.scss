@@ -1,0 +1,60 @@
+/* ==========================================================================
+Common Object - Navigation
+========================================================================== */
+
+  .o-nav {
+    @include list-unstyled;
+    > li{
+      &, > a{
+        display:inline-block;
+        @if $legacy_browser_support {
+          *display:inline;
+          zoom:1;
+        }
+      }
+    }
+  }
+
+    .o-nav--stacked {
+      > li{
+        display:list-item;
+        > a{
+          display:block;
+        }
+      }
+    }
+
+    .o-nav--banner {
+      text-align:center;
+    }
+
+    .o-nav--block {
+      > li{
+        > a{
+          padding:$space-halve $space;
+        }
+      }
+    }
+
+    .o-nav--fit {
+      display:table;
+      width:100%;
+      > li{
+        display:table-cell;
+        > a{
+          display:block;
+        }
+      }
+    }
+
+
+    .o-nav--keywords {
+      > li{
+        &:after{
+          content:"\002C" "\00A0";
+        }
+        &:last-child:after{
+          display:none;
+        }
+      }
+    }

@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Common Object - Icons Fonts
+   ========================================================================== */
+
+	.o-icon {
+		text-transform: none;
+		font-weight: normal;
+		font-size: $fs-base;
+		line-height: 1;
+		zoom: 1;
+	    /**
+	     * So using `.icon` on certain elements doesn’t make a visual difference.
+	     */
+		font-style: normal;
+		speak: none;
+		/** Place the icon in a box the exact same dimensions as the icon itself. */
+		font-variant: normal;
+
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		&:before{
+			content:attr(data-icon);
+		}
+
+	}

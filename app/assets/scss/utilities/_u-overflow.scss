@@ -1,0 +1,11 @@
+$use-utilities-overflow:  true !default;
+
+@if $use-utilities-overflow == true{
+/* ==========================================================================
+   Utilities Overflow
+   ========================================================================== */
+
+  .u-of-hidden { overflow: hidden; }
+  .u-of-scroll { overflow: scroll; }
+
+}//end if

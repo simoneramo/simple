@@ -1,0 +1,22 @@
+$use-utilities-mixins:  true !default;
+
+@if $use-utilities-mixins == true{
+/*==========================================================================
+  Utilities - Mixins
+  ========================================================================== */
+
+  .u-hidden                   { @include hidden; }
+  .u-clearfix                 { @include clearfix; }
+  .u-visually-hidden          { @include visually-hidden; }
+  .u-sr-only                  { @include sr-only; }
+  .u-list-unstyled            { @include list-unstyled; }
+  .u-image-replace            { @include image-replace; }
+  .u-center-content           { @include center-content; }
+  .u-invisible                { @include invisible; }
+  .u-va-container             { transform-style: preserve-3d; }
+  .u-vertical-align           { @include vertical-align;  }
+  .u-vertical-align-table     { @include vertical-align-table; }
+  .u-global-mb                { @include global-mb; }
+  .u-reset-mb                 { @include reset-mb; }
+
+}//endif

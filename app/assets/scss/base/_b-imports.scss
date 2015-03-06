@@ -1,0 +1,202 @@
+$use-base-imports:  true !default;
+
+@if $use-base-imports == true{
+/* ==========================================================================
+   Base - Imports
+
+    .eot');                                                // IE9 Compat Modes
+    .eot?#iefix') format('embedded-opentype'),             // IE6-IE8
+    .woff2') format('woff2'),                              // http://goo.gl/ldoFk2
+    .woff') format('woff'),                                // Modern Browsers
+    .ttf') format('truetype'),                             // Safari, Android, iOS
+    .svg#{name-of-id-inside-svg-file}') format('svg');     // Legacy iOS
+    .otf                                                   // ??
+
+    Why the # in .svg# ?
+    - http://goo.gl/6N8p7y
+
+   ========================================================================== */
+
+
+  //icon fonts feather
+  @font-face {
+    font-family: '#{$ff-family-1}';
+    font-weight: normal;
+    font-style: normal;
+      src: url('../../assets/fonts/#{$ff-folder-1}/#{$ff-name-1}.eot');
+      src: url('../../assets/fonts/#{$ff-folder-1}/#{$ff-name-1}.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-1}/#{$ff-name-1}.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-1}/#{$ff-name-1}.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-1}/#{$ff-name-1}.svg#feather') format('svg');
+  }
+
+  //icon fonts github
+  @font-face {
+    font-family: '#{$ff-family-2}';
+    font-weight: normal;
+    font-style: normal;
+      src: url('../../assets/fonts/#{$ff-folder-2}/#{$ff-name-2}.eot');
+      src: url('../../assets/fonts/#{$ff-folder-2}/#{$ff-name-2}.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-2}/#{$ff-name-2}.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-2}/#{$ff-name-2}.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-2}/#{$ff-name-2}.svg#octicons') format('svg');
+  }
+
+  // type fonts source sans pro
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLight.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLight.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLight.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLight.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLight.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLight.svg#source_sans_proextralight') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 200;
+    font-style: italic;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLightIt.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLightIt.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLightIt.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLightIt.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLightIt.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-ExtraLightIt.svg#source_sans_proXLtIt') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Light.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Light.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Light.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Light.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Light.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Light.svg#source_sans_prolight') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-LightIt.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-LightIt.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-LightIt.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-LightIt.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-LightIt.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-LightIt.svg#source_sans_prolight_italic') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Regular.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Regular.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Regular.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Regular.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Regular.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Regular.svg#source_sans_proregular') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-It.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-It.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-It.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-It.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-It.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-It.svg#source_sans_proitalic') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Semibold.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Semibold.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Semibold.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Semibold.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Semibold.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Semibold.svg#source_sans_prosemibold') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-SemiboldIt');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-SemiboldIt.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-SemiboldIt.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-SemiboldIt.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-SemiboldIt.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-SemiboldIt.svg#source_sans_proSBdIt') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Bold.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Bold.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Bold.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Bold.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Bold.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Bold.svg#source_sans_probold') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BoldIt.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BoldIt.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BoldIt.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BoldIt.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BoldIt.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BoldIt.svg#source_sans_probold_italic') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Black.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Black.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Black.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Black.otf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Black.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-Black.svg#source_sans_problack') format('svg');
+  }
+
+  @font-face{
+    font-family: '#{$ff-family-3}';
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: normal;
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BlackIt.eot');
+      src: url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BlackIt.eot?#iefix') format('embedded-opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BlackIt.otf.woff') format('woff'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BlackIt.otf') format('opentype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BlackIt.ttf') format('truetype'),
+           url('../../assets/fonts/#{$ff-folder-3}/#{$ff-name-3}-BlackIt.svg#source_sans_problack_italic') format('svg');
+  }
+
+}//end if

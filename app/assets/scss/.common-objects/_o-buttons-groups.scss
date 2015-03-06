@@ -1,0 +1,54 @@
+$use-objects-buttons-groups:  true !default;
+
+@if $use-objects-buttons-groups == true{
+/* ==========================================================================
+   Common Objects - Buttons Groups
+   ========================================================================== */
+
+  // object
+  @include object(o-btn-group) {
+
+    // modifier
+    @include modifier(round){
+      .o-btn{
+        &:first-child{
+          border-top-left-radius: 200px;
+          border-bottom-left-radius: 200px;
+        }
+        &:last-child{
+          border-top-right-radius: 200px;
+          border-bottom-right-radius: 200px;
+        }
+      }
+    }
+
+    // modifier
+    @include modifier(rounded){
+      .o-btn{
+        &:first-child{
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+        &:last-child{
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+    }
+
+  }
+
+
+  // object
+  @include object(o-btn-toolbar) {
+    display: inline-block;
+
+    // element
+    @include element(group) {
+      float:left;
+      margin-right: $space-quarter;
+    }
+
+  }
+
+}//endif

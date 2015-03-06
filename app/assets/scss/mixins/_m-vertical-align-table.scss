@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Mixin - Vertical Align with Table
+
+   css:
+   -----
+   .{class-name} {
+    @include vertical-align-table;
+    height: {needed};
+    text-align: {center, right};
+   }
+
+   html:
+   .{class-name}
+     .{class-name}__inner
+       p content
+
+   ========================================================================== */
+
+  @mixin vertical-align-table{
+  	display: table;
+  	border-collapse: collapse;
+  	width: 100%;
+  	> div{
+  		display: table-cell;
+  		vertical-align: middle;
+  	}
+  }

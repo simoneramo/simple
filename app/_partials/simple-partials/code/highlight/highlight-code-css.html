@@ -1,0 +1,27 @@
+<pre><code class="css">@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    body:first-of-type pre::after {
+      content: &#39;highlight: &#39; attr(class);
+    }
+    body {
+      background: linear-gradient(45deg, blue, red);
+    }
+  }
+
+  @import url(&#39;print.css&#39;);
+  @page:right {
+   margin: 1cm 2cm 1.3cm 4cm;
+  }
+
+  @font-face {
+    font-family: Chunkfive; src: url(&#39;Chunkfive.otf&#39;);
+  }
+
+  div.text,
+  #content,
+  li[lang=ru] {
+    font: Tahoma, Chunkfive, sans-serif;
+    background: url(&#39;hatch.png&#39;) /* wtf? */;
+    color: #F0F0F0 !important;
+    width: 100%;
+  }
+</code></pre>

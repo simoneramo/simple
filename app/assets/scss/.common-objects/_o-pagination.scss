@@ -1,0 +1,22 @@
+  /* ==========================================================================
+   Common Object - Pagination
+   ========================================================================== */
+
+  .o-pagination {
+    @include unstyled;
+    > li > a{
+      margin: $space-halve;
+    }
+  }
+
+    .o-pagination__first) {
+      a:before{
+      content:"\00AB" "\00A0";
+      }
+    }
+
+    .o-pagination__last) {
+      a:after{
+        content:"\00A0" "\00BB";
+      }
+    }

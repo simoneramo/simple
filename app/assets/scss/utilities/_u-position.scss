@@ -1,0 +1,26 @@
+$use-utilities-position:  true !default;
+
+@if $use-utilities-position == true{
+/* ==========================================================================
+   Utilities - Position
+   ========================================================================== */
+
+  // position what
+  .u-p-relative { position: relative; }
+  .u-p-absolute { position: absolute; }
+  .u-p-fixed    { position: fixed; }
+
+  // position where
+  .u-p-t-0      { top: 0; }
+  .u-p-r-0      { right: 0; }
+  .u-p-b-0      { bottom: 0; }
+  .u-p-l-0      { left: 0; }
+
+  // z-index
+  .u-z-1        { z-index: 1; }
+  .u-z-2        { z-index: 2; }
+  .u-z-3        { z-index: 3; }
+  .u-z-4        { z-index: 4; }
+  .u-z-5        { z-index: 5; }
+
+}//endif

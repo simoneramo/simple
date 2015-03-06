@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    include ../../_partials/site/compatibility-mode
+    title Simple - Base
+    include ../../_partials/site/description
+    include ../../_partials/site/meta-viewport
+
+    include ../../_partials/site/favicon
+    //- or
+
+    //- include ../../_partials/site/favicon-png
+
+    //-include ../../_partials/site/metaquery
+
+    //- include ../../_partials/site/icon-chrome-android
+
+    //- include ../../_partials/site/icon-safari-ios
+
+    //- include ../../_partials/site/icon-tile-win8
+
+    //- include ../../_partials/site/if-mobile-url
+
+    link(type='text/css', rel='stylesheet', href='../../assets/css/main.css')
+  body.s-simple
+    .l-simple-container(class='u-s-mt-2')
+      h1.u-fs-h1x.u-ta-center(class='u-s-mb-1/6') Simple Css
+      ul(class='o-nav  o-nav--banner  u-s-mb-4')
+        li
+          a(class='o-btn  u-s-active' href='../base') base
+        li
+          a(class='o-btn' href='../objects') objects
+        li
+          a(class='o-btn' href='../utilities') utilities
+        li
+          a(class='o-btn' href='../sink') sink
+        li
+          a(class='o-btn' href='../modules') modules
+        li
+          a(class='o-btn' href='../config') config
+        li
+          a(class='o-btn' href='../mixins') mixins
+
+      //- base
+      include ../../_partials/simple-partials/base/links
+      include ../../_partials/simple-partials/base/media
+      include ../../_partials/simple-partials/base/quotes
+      include ../../_partials/simple-partials/base/text
+      include ../../_partials/simple-partials/base/lists
+      include ../../_partials/simple-partials/base/code
+
+    include ../../_partials/site/scripts
+    include ../../_partials/site/analytics

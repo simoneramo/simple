@@ -1,0 +1,30 @@
+$use-base-links:	true !default;
+
+@if $use-base-links == true{
+/* ==========================================================================
+   Base - Links
+   ========================================================================== */
+  a{
+    vertical-align: baseline;
+    font-size: 100%;
+    transition: color .25s;
+    &, &:hover{
+      color: $c-link;
+      text-decoration: none;
+    }
+    &:hover {
+      color: $c-link-hover;
+    }
+    &:active {
+      transition: none;
+      color: $c-link-active;
+      text-decoration: underline;
+    }
+    &:visited{
+      color:$c-link-visited;
+      transition: none;
+      text-decoration: none;
+    }
+  }
+
+}//end if

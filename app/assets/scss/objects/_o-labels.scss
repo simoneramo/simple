@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Common Object - Labels
+   ========================================================================== */
+
+	.o-label {
+		display:inline-block;
+		text-align:center;
+		background-color: $c-object;
+		padding-left:$space;
+		padding-right:$space;
+	}
+
+	.o-label--rounded {
+		border-radius:$label-round;
+	}
+
+	.o-label--pill {
+		border-radius:100px;
+	}

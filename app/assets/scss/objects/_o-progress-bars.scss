@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Common Objects - Pagination
+   ========================================================================== */
+
+  .o-progress {
+    height: $space-3;
+    background-color: $c-object;
+  }
+
+    .o-progress__bar {
+      height: 100%;
+      text-align: center;
+      background-color: shade($c-object,10%);
+      display: table;
+      &[aria-valuenow="0"]{
+        background-color: rgba(0, 0, 0, 0);
+        background-image: none;
+      }
+    }
+
+      .o-progress__bar--success    { @extend %e-c-bgc-success; }
+      .o-progress__bar--info       { @extend %e-c-bgc-info; }
+      .o-progress__bar--warning    { @extend %e-c-bgc-warning; }
+      .o-progress__bar--danger     { @extend %e-c-bgc-danger; }
+      .o-progress__bar--error      { @extend %e-c-bgc-error; }
+      .o-progress__bar--disable    { @extend %e-s-disable; }
+
+      .o-progress__bar--striped {
+        background-image: linear-gradient(45deg,rgba(255, 255, 255, 0.15) 25%,rgba(0, 0, 0, 0) 25%,rgba(0, 0, 0, 0) 50%,rgba(255, 255, 255, 0.15) 50%,rgba(255, 255, 255, 0.15) 75%,rgba(0, 0, 0, 0) 75%,rgba(0, 0, 0, 0));
+        background-size: 40px 40px;
+      }
+
+
+    .o-progress__bar-label {
+      vertical-align: middle;
+      display: table-cell;
+      padding: 0 $space;
+    }

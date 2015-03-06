@@ -1,0 +1,3352 @@
+<pre><code class="css">doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    include ../_partials/site/compatibility-mode
+    title Core
+    include ../../_partials/site/description
+    include ../../_partials/site/meta-viewport
+
+    //- Uncomment and use metaquery insteat of breakpoint?
+    //- meta(name="breakpoint", content="phone", media="(max-width: 480px)")
+    //- meta(name="breakpoint", content="small-tablet", media="(min-width: 480px) and (max-width: 600px)")
+    //- meta(name="breakpoint", content="tablet", media="(min-width: 600px) and (max-width: 1024px)")
+    //- meta(name="breakpoint", content="widescreen", media="(min-width: 1024px)")
+    //- meta(name="breakpoint", content="retina", media="only screen and (-webkit-min-device-pixel-ratio : 2)")
+
+    //- script(src="../components-bower/metaquery/metaquery.min.js")
+    //- inline metaquery
+    //- script
+      include ../components-bower/metaquery/metaquery.min.js
+
+    //- Add to homescreen for Chrome on Android
+    meta(name="mobile-web-app-capable", content="yes")
+    link(rel="icon", sizes="192x192", href="assets/images/touch/chrome-touch-icon-192x192.png")
+
+    //- Add to homescreen for Safari on iOS
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    meta(name="apple-mobile-web-app-title", content="Core CSS")
+    link(rel="apple-touch-icon", href="assets/images/touch/apple-touch-icon.png")
+
+    //- Tile icon for Win8 (144x144 + tile color)
+    meta(name="msapplication-TileImage", content="assets/images/touch/ms-touch-icon-144x144-precomposed.png")
+    meta(name="msapplication-TileColor", content="#3372DF")
+    meta(name="theme-color", content="#3372DF")
+
+    //- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones
+    //- <link rel="canonical" href="http://www.example.com/">
+
+    link(type='text/css', rel='stylesheet', href='../assets/css/main.css')
+  body.s-simple
+    //- include:markdown _partials/article.md
+    //- include _partials/partial
+    //- header.l-styleguide-header.container
+      //- h1(class='+u-font-huge  +u-font-600' style='font-family: source-sans-pro') CORE
+      //- h3(class='+u-h2  +u-font-300  +u-font-italic'  style='font-family: source-sans-pro') Styleguide Version 0.0.1
+    div.l-simple-container
+      h1(class='styleguide-title +u-font-large') Base
+      h1 Blockquote
+      div.styleguide-base.blockquote
+        blockquote
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b Albert Einstein
+        blockquote(class="+u-text-right")
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b Albert Einstein
+        .styleguide-code
+          p code here
+      h1 Code
+      div.styleguide-objects.code
+        p regulasdf fasdf
+          code code
+      h1 Colors
+      div.styleguide-base.config
+        h3 Custom Colours
+        div.styleguide-colors.white
+        div.styleguide-colors.yellow
+        div.styleguide-colors.orange
+        div.styleguide-colors.red
+        div.styleguide-colors.maroon
+        div.styleguide-colors.pink
+        div.styleguide-colors.green
+        div.styleguide-colors.aqua
+        div.styleguide-colors.blue
+        div.styleguide-colors.black
+        div.styleguide-colors.grey
+        div.styleguide-colors.light-grey
+        h3 Background
+        div.styleguide-colors.bgc-1
+        div.styleguide-colors.bgc-2
+        div.styleguide-colors.bgc-3
+        h3 Buttons
+        div.styleguide-colors.c-btn-1
+        div.styleguide-colors.c-btn-2
+        div.styleguide-colors.bgc-btn-1
+        div.styleguide-colors.bgc-btn-2
+        h3 Links
+        div.styleguide-colors.c-link
+        div.styleguide-colors.c-link-hover
+        div.styleguide-colors.c-link-active
+        div.styleguide-colors.c-link-visited
+        h3 Notify
+        div.styleguide-colors(class='+u-success')
+        div.styleguide-colors(class='+u-info')
+        div.styleguide-colors(class='+u-error')
+        div.styleguide-colors(class='+u-warning')
+        div.styleguide-colors(class='+u-danger')
+        h3 Headings
+        div.styleguide-colors.c-heading-1
+        div.styleguide-colors.c-heading-2
+        div.styleguide-colors.c-heading-3
+        h3 Form
+        div.styleguide-colors.c-form-1
+        div.styleguide-colors.c-form-2
+        div.styleguide-colors.c-form-input
+        div.styleguide-colors.c-form-hover
+        div.styleguide-colors.c-form-active
+        div.styleguide-colors.c-form-focus
+        h3 Code
+        div.styleguide-colors.c-code
+        div.styleguide-colors.bgc-code
+        h3 Brands
+        div.styleguide-colors.google
+        div.styleguide-colors.facebook
+        div.styleguide-colors.twitter
+        div.styleguide-colors.linkedin
+        div.styleguide-colors.dribble
+        div.styleguide-colors.instagram
+        div.styleguide-colors.googleplus
+        div.styleguide-colors.behance
+        div.styleguide-colors.gimmebar
+        div.styleguide-colors.github
+        div.styleguide-colors.tumblr
+        div.styleguide-colors.youtube
+        div.styleguide-colors.vine
+        div.styleguide-colors.kickstarter
+        div.styleguide-colors.dropbox
+        div.styleguide-colors.rss
+        div.styleguide-colors.facebook
+        div.styleguide-colors.codepen
+        div.styleguide-colors.foursquare
+        div.styleguide-colors.soundcloud
+        div.styleguide-colors.wordpress
+        div.styleguide-colors.tumblr
+        div.styleguide-colors.blogger
+        div.styleguide-colors.squarespace
+        div.styleguide-colors.joomla
+        div.styleguide-colors.drupal
+        div.styleguide-colors.typepad
+        div.styleguide-colors.expression-engine
+        div.styleguide-colors.kirby
+        div.styleguide-colors.moveabletype
+        div.styleguide-colors.disqus
+        div.styleguide-colors.html
+      h1 Typography
+      div.styleguide-base.typography
+        h1 h1 Heading
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fuga ducimus dolorem suscipit.
+        h2 h2 Heading
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus perspiciatis labore quis, qui, animi hic autem est aut beatae sit!
+        h3 h3 Heading
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis modi a numquam commodi provident amet.
+        h4 h4 Heading
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut error voluptates optio dolores vel libero. Odit hic nostrum a tempora, facere aut, quia.
+        h5 h5 Heading 5
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, reiciendis.
+        h6 h6 Heading 6
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, repellendus illum ad.
+      h1 Body Copy
+      div.styleguide-base.typograph
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+      h1 Body Copy Lead
+      div.styleguide-base.typograph
+        p(class='+u-font-lead') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+      h1 Text Utility Alignment Classes
+      div.styleguide-base.typography
+        p(class='+u-text-left') Lorem ipsum dolor sit amet.
+        p(class='+u-text-center') Lorem ipsum dolor sit amet.
+        p(class='+u-text-right') Lorem ipsum dolor sit amet.
+        p(class='+u-text-justify') Lorem ipsum dolor sit amet.
+
+      h1 Text-level semantics
+      div.styleguide-base.typography
+        p
+        | The
+        a(href='#') a element
+        | example
+        | The
+        abbr(title='Title text') abbr element
+        | example
+        | The
+        b b element
+        | example
+        | The
+        cite cite element
+        | example
+        | The
+        code code element
+        | example
+        | The
+        del del element
+        | example
+        | The
+        dfn dfn element
+        | example
+        | The
+        em em element
+        | example
+        | The
+        i i element
+        | example
+        | The img element
+        img(src='http://placehold.it/16', alt='')
+        | example
+        | The
+        ins ins element
+        | example
+        | The
+        kbd kbd element
+        | example
+        mark mark element
+        | example
+        | The
+        q
+          | q element
+          q inside
+          | a q element
+        | example
+        | The
+        s s element
+        | example
+        | The
+        samp samp element
+        | example
+        | The
+        small small element
+        | example
+        | The
+        span span element
+        | example
+        | The
+        strike strike element
+        | example
+        | The
+        strong strong element
+        | example
+        | The
+        sub sub element
+        | example
+        | The
+        sup sup element
+        | example
+        | The
+        var var element
+        | example
+        | The
+        u u element
+        | example
+        .styleguide-code
+          p code here
+      h1 Base Lists
+      div.styleguide-base.lists
+        h2.styleguide-title--sub Orded lists
+        ol
+          li list item 1
+          li
+            | list item 1
+            ol
+              li list item 2
+              li
+                | list item 2
+                ol
+                  li list item 3
+                  li list item 3
+              li list item 2
+              li list item 2
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Unordered lists
+        ul
+          li list item 1
+          li
+            | list item 1
+            ul
+              li list item 2
+              li
+                | list item 2
+                ul
+                  li list item 3
+                  li list item 3
+              li list item 2
+              li list item 2
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Unordered Unsyled lists
+        ul( class='+u-unstyled')
+          li list item 1
+          li
+            | list item 1
+            ul
+              li list item 2
+              li
+                | list item 2
+                ul
+                  li list item 3
+                  li list item 3
+              li list item 2
+              li list item 2
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Definition list
+        dl
+          dt Definition name
+          dd Definition value
+          dt Definition name
+          dd Definition value
+          dd Definition value
+          dt Definition name
+          dt Definition name
+          dd Definition value
+        .styleguide-code
+          p code here
+      h1(class='styleguide-title +u-font-large') Objects
+      h1 Loaders
+      div.styleguide-objects.loaders
+        .o-spinner
+          | Loading...
+        .styleguide-code
+          p code here
+      h1 Tabs
+      div.styleguide-objects.tabs
+        ul.o-tabs(style='border-bottom:2px solid #f7f7f7')
+          li
+            a.o-btn(href='http://www.unvisted.io') Tab 1
+          li
+            a(class='o-btn  +active' href='https://twitter.com') Tab 2
+          li
+            a.o-btn(href='http://www.unvisted.io') Tab 3
+        ul.o-tabs.--right(style='border-bottom:2px solid #f7f7f7')
+          li
+            a(class='o-btn  +active'  href='https://twitter.com') Tab 1
+          li
+            a.o-btn(href='http://www.unvisted.io') Tab 2
+          li
+            a.o-btn(href='http://www.unvisted.io') Tab 3
+        ul.o-tabs.--centered(style='border-bottom:2px solid #f7f7f7')
+          li
+            a.o-btn(href='https://twitter.com') Tab 1
+          li
+            a(class='o-btn  +active' href='https://twitter.com') Tab 2
+          li
+            a.o-btn(href='http://www.unvisted.io') Tab 3
+        .styleguide-code
+          p code here
+      h1 Flag Object
+      div.styleguide-objects.flags
+
+        .o-flag
+          .o-flag__image
+            img(src="http://placehold.it/100", alt="")
+          .o-flag__body
+            h1(class='+u-h3') Flag Body - Default
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
+
+        hr.o-rule(class='+u-mt-2 +u-mb-2')
+
+        div(class='o-flag  +u-pos-rel')
+          p(class='o-notify  +u-error  +u-1-1  +u-pos-abs') Warning: Set max-width of image if rwd - you decide
+          .o-flag__image
+            img(src="http://placehold.it/400", alt="")
+          .o-flag__body
+            h1(class='+u-h3') Flag Body - Default
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
+
+        hr.o-rule(class='+u-mt-2 +u-mb-2')
+
+        .o-flag.--rev
+          .o-flag__body
+            h1(class='+u-h3') Flag Body - Default Image Rev
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
+          .o-flag__image
+            img(src="http://placehold.it/200", alt="")
+
+        hr.o-rule(class='+u-mt-2 +u-mb-2')
+
+        div(class='o-flag  +u-pos-rel')
+          p(class='o-notify  +u-error  +u-1-1  +u-pos-abs') Warning: Set max-width of image if rwd - you decide
+          .o-flag__image.--top
+            img(src="http://placehold.it/800", alt="")
+          .o-flag__body
+            h1(class='+u-h3') Flag Body - Image Top
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
+
+        hr.o-rule(class='+u-mt-2 +u-mb-2')
+
+        div(class='o-flag  +u-pos-rel')
+          p(class='o-notify  +u-error  +u-1-1  +u-pos-abs') Warning: Set max-width of image if rwd - you decide
+          .o-flag__image.--bottom
+            img(src="http://placehold.it/400", alt="")
+          .o-flag__body
+            h1(class='+u-h3') Flag Body - Image Bottom
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
+
+        hr.o-rule(class='+u-mt-2 +u-mb-2')
+
+        div(class='o-flag  +u-pos-rel')
+          p(class='o-notify  +u-error  +u-1-1  +u-pos-abs') Warning: Set max-width of image if rwd - you decide
+          .o-flag__image
+            img(src="http://placehold.it/700", alt="")
+          .o-flag__body.--top
+            h1(class='+u-h3') Flag Body Top
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
+
+        hr.o-rule(class='+u-mt-2 +u-mb-2')
+
+        div(class='o-flag  +u-pos-rel')
+          .o-flag__image
+            img(src="http://placehold.it/350", alt="")
+          .o-flag__body.--bottom
+            h1(class='+u-h3') Flag Body Bottom
+            p A flag is a piece of fabric (most often rectangular or quadrilateral) with a distinctive design that is used as a symbol, as a signaling device, or as decoration. The term flag is also used to refer to the graphic design employed by a flag, or to its depiction in another medium.
+
+            p The first flags were used to assist military co-ordination on battlefields, and flags have since evolved into a general tool for rudimentary signalling and identification, especially in environments where communication is similarly challenging (such as the maritime environment where semaphore is used). National flags are potent patriotic symbols with varied wide-ranging interpretations, often including strong military associations due to their original and ongoing military uses. Flags are also used in messaging, advertising, or for other decorative purposes. The study of flags is known as vexillology, from the Latin word vexillum, meaning flag or banner.
+
+            p Due to the use of flags by military units, "flag" is also used as the name of some military units. A flag (Arabic: لواء) is equivalent to a brigade in Arab countries, and in Spain, a flag (Spanish: bandera) is a battalion-equivalent in the Spanish Legion.
+
+        .styleguide-code
+          p code here
+
+      h1 Hamburger
+      div.styleguide-objects.hamburger
+        button(type="button" id="burg" class="o-burger")
+          i
+        .styleguide-code
+          p code here
+      h1 Matrix
+      div.styleguide-objects.matrix
+        h2.styleguide-title--sub Three
+        ul.o-matrix.--three
+          li.o-matrix__full Lorem
+          li
+            a.o-matrix__link(href='#') Ipsuma
+          li
+            a.o-matrix__link(href='#') Site
+          li Amet
+          li.all-cols Consectetuer
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Two
+        ul.o-matrix.--two
+          li.o-matrix__full Lorem
+          li.o-matrix__full
+            a.o-matrix__link(href='#') Ipsuma
+          li
+            a.o-matrix__link(href='#') Site
+          li Amet
+          li.o-matrix__full Consectetuer
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Two
+        ul.o-matrix.--four
+          li.o-matrix__full Lorem
+          li
+            a.o-matrix__link(href='#') Ipsuma
+          li
+            a.o-matrix__link(href='#') Site
+          li Amet
+          li.o-matrix__full Consectetuer
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Two
+        ul.o-matrix.--five
+          li.o-matrix__full Lorem
+          li
+            a.o-matrix__link(href='#') Ipsuma
+          li
+            a.o-matrix__link(href='#') Site
+          li Amet
+          li.o-matrix__full Consectetuer
+        .styleguide-code
+          p code here
+      h1 Options
+      div.styleguide-objects.options
+        ul.o-options
+          li
+            a(href='/') Option
+          li
+            a(class='' href='/') Option One
+          li
+            a(href='/') Option Two
+        .styleguide-code
+          p code here
+        ul(class='o-options  --fit')
+          li
+            a(href='/') Option
+          li
+            a(href='/') Option One
+          li
+            a(href='/') Option Two
+        .styleguide-code
+          p code here
+        ul(class='o-options  --fit')
+          li(class='+u-text-center')
+            a(href='/') Option
+          li(class='+u-text-center')
+            a(class='+active' href='/') Option One
+          li(class='+u-text-center')
+            a(href='/') Option Two
+        .styleguide-code
+          p code here
+        h3 Option with active state
+        ul.o-options
+          li
+            a(href='/') Option
+          li
+            a(class='+u-active' href='/') Option One
+          li
+            a(href='/') Option Two
+        .styleguide-code
+          p code here
+      h1 Tables
+      div.styleguide-objects.tables
+        h2.styleguide-title--sub Table
+        table(class='o-table')
+          colgroup
+            col
+            col
+            col
+          thead
+            tr
+              th Countries
+              th State
+              th Population
+              th Population
+          tbody
+            tr
+              td New York
+              td New York
+              td 8,405,837 million
+              td another table cell
+            tr
+              td Los Angeles
+              td California
+              td 3,884,307 million
+              td another table cell
+            tr
+              td Chicago
+              td Illinois
+              td 2,718,782 million
+              td another table cell
+            tr
+              td USA
+              td Washington D.C.
+              td 309 million
+              td another table cell
+            tr
+              td Houston
+              td Texas
+              td 309 million
+              td another table cell
+            tr
+              td Philadelphia
+              td Pennsylvania
+              td 2,195,914 million
+              td another table cell
+            tr
+              td Phoenix
+              td Arizona
+              td 1,513,367 million
+              td another table cell
+            tr
+              td San Diego
+              td California
+              td 1,355,896 million
+              td another table cell
+          tfoot
+            tr
+              td Table Footer
+              td Table Footer
+              td Table Footer
+              td Table Footer
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Table Bordered
+        table(class='o-table  --bordered')
+          colgroup
+            col
+            col
+            col
+          thead
+            tr
+              th Countries
+              th State
+              th Population
+          tbody
+            tr
+              td New York
+              td New York
+              td 8,405,837 million
+            tr
+              td Los Angeles
+              td California
+              td 3,884,307 million
+            tr
+              td Chicago
+              td Illinois
+              td 2,718,782 million
+            tr
+              td USA
+              td Washington D.C.
+              td 309 million
+            tr
+              td Houston
+              td Texas
+              td 309 million
+            tr
+              td Philadelphia
+              td Pennsylvania
+              td 2,195,914 million
+            tr
+              td Phoenix
+              td Arizona
+              td 1,513,367 million
+            tr
+              td San Diego
+              td California
+              td 1,355,896 million
+          tfoot
+            tr
+              td Table Footer
+              td Table Footer
+              td Table Footer
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Table Hover
+        table(class='o-table  --bordered  --hover')
+          colgroup
+            col
+            col
+            col
+          thead
+            tr
+              th Countries
+              th State
+              th Population
+          tbody
+            tr
+              td New York
+              td New York
+              td 8,405,837 million
+            tr
+              td Los Angeles
+              td California
+              td 3,884,307 million
+            tr
+              td Chicago
+              td Illinois
+              td 2,718,782 million
+            tr
+              td USA
+              td Washington D.C.
+              td 309 million
+            tr
+              td Houston
+              td Texas
+              td 309 million
+            tr
+              td Philadelphia
+              td Pennsylvania
+              td 2,195,914 million
+            tr
+              td Phoenix
+              td Arizona
+              td 1,513,367 million
+            tr
+              td San Diego
+              td California
+              td 1,355,896 million
+          tfoot
+            tr
+              td Table Footer
+              td Table Footer
+              td Table Footer
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Table Striped
+        table(class='o-table  --bordered  --striped')
+          colgroup
+            col
+            col
+            col
+          thead
+            tr
+              th Countries
+              th State
+              th Population
+          tbody
+            tr
+              td New York
+              td New York
+              td 8,405,837 million
+            tr
+              td Los Angeles
+              td California
+              td 3,884,307 million
+            tr
+              td Chicago
+              td Illinois
+              td 2,718,782 million
+            tr
+              td USA
+              td Washington D.C.
+              td 309 million
+            tr
+              td Houston
+              td Texas
+              td 309 million
+            tr
+              td Philadelphia
+              td Pennsylvania
+              td 2,195,914 million
+            tr
+              td Phoenix
+              td Arizona
+              td 1,513,367 million
+            tr
+              td San Diego
+              td California
+              td 1,355,896 million
+          tfoot
+            tr
+              td Table Footer
+              td Table Footer
+              td Table Footer
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Table RWD
+        table(class='o-table  --bordered  --rwd')
+          tr
+            th Movie Title
+            th Genre
+            th Year
+            th Gross
+          tr
+            td(data-th="Movie Title") Star Wars
+            td(data-th="Genre") Adventure, Sci-fi
+            td(data-th="Year") 1977
+            td(data-th="Gross") $460,935,665
+          tr
+            td(data-th="Movie Title") Howard The Duck
+            td(data-th="Genre") "Comedy"
+            td(data-th="Year") 1986
+            td(data-th="Gross") $16,295,774
+          tr
+            td(data-th="Movie Title") American Graffiti
+            td(data-th="Genre") Comedy, Drama
+            td(data-th="Year") 1973
+            td(data-th="Gross") $115,000,000
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Table RWD the sink
+        table(class='o-table  --bordered  --rwd  --hover  --striped')
+          tr
+            th Movie Title
+            th Genre
+            th Year
+            th Gross
+          tr
+            td(data-th="Movie Title") Star Wars
+            td(data-th="Genre") Adventure, Sci-fi
+            td(data-th="Year") 1977
+            td(data-th="Gross") $460,935,665
+          tr
+            td(data-th="Movie Title") Howard The Duck
+            td(data-th="Genre") "Comedy"
+            td(data-th="Year") 1986
+            td(data-th="Gross") $16,295,774
+          tr
+            td(data-th="Movie Title") American Graffiti
+            td(data-th="Genre") Comedy, Drama
+            td(data-th="Year") 1973
+            td(data-th="Gross") $115,000,000
+        .styleguide-code
+          p code here
+      h1 Link Complex
+      div.styleguide-objects.link-complex
+        a.o-link-complex(href='log-in')
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            span.o-link-complex__target Log in
+        .styleguide-code
+          p code here
+      h1 Blockquote
+      div.styleguide-objects.blockquote
+        h2.styleguide-title--sub Blockquote
+        blockquote
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b Albert Einstein
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Blockquote
+        blockquote.o-blockquote
+          q Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b.o-blockquote__source Albert Einstein
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Blockquote
+        blockquote.o-blockquote-right
+          q Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b.o-blockquote__source Albert Einstein
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Blockquote
+        blockquote.o-blockquote-right
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b.o-blockquote__source Albert Einstein
+        .styleguide-code
+          p code here
+        h2.styleguide-title--sub Blockquote
+        blockquote.o-blockquote
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          b.o-blockquote__source Albert Einstein
+        .styleguide-code
+          p code here
+      h1 Progress Bars
+      div.styleguide-objects.progress-bars
+        div.o-progress
+          div(
+              class='o-progress__bar  +u-info',
+              role='progressbar',
+              aria-valuenow='20',
+              aria-valuemin='0',
+              aria-valuemax='100',
+              style='width: 20%;'
+            )
+            span.o-progress__bar-label 20% Complete
+        div.o-progress
+          div(
+            class='o-progress__bar  --striped  +u-danger',
+            role='progressbar',
+            aria-valuenow='50',
+            aria-valuemin='0',
+            aria-valuemax='100',
+            style='width: 50%;'
+            )
+            span.o-progress__bar-label 50% Complete
+        div.o-progress
+          div(
+            class='o-progress__bar  +u-warning',
+            role='progressbar', a
+            ria-valuenow='30',
+            aria-valuemin='0', aria-valuemax='100',
+            style='width: 30%;'
+            )
+            span.o-progress__bar-label.sr-only 30% Complete
+        div.o-progress
+          div(class='o-progress__bar  +u-error',
+            role='progressbar',
+            aria-valuenow='60',
+            aria-valuemin='0',
+            aria-valuemax='100',
+            style='width: 60%;'
+            )
+            span.o-progress__bar-label 60% Complete
+        div.o-progress
+          div(class='o-progress__bar  --striped  +u-success',
+            role='progressbar',
+            aria-valuenow='80',
+            aria-valuemin='0',
+            aria-valuemax='100',
+            style='width: 80%;'
+            )
+            span.o-progress__bar-label.sr-only 80% Complete
+        .styleguide-code
+          p this will be code
+      h1 Pagination
+      div.styleguide-objects.pagination
+        ol.o-nav.o-pagination
+          li.o-pagination__first
+            a(class='o-btn' href='/') First
+          li
+            a(class='o-btn' href='/') 1
+          li
+            a(class='o-btn' href='/') 2
+          li
+            a(class='o-btn +active' href='/') 3
+          li
+            a(class='o-btn' href='/') 4
+          li
+            a(class='o-btn' href='/') 5
+          li.o-pagination__last
+            a(class='o-btn' href='/') Last
+        .styleguide-code
+          p this will be code
+        ul.o-nav.o-pagination
+          li.o-pagination__first
+            a(href='/') First
+          li.o-pagination__prev
+             a(href='/') Previous
+          li
+            a(href='/') 1
+          li
+            a(href='/page/2') 2
+          li.current
+            a(href='/page/3') 3
+          li
+            a(href='/page/4') 4
+          li
+            a(href='/page/5') 5
+          li.o-pagination__next
+            a(href='/') Next
+          li.o-pagination__last
+            a(href='/') Last
+        .styleguide-code
+          p this will be code
+      h1 This or That
+      div.styleguide-objects.this-that
+        h1.o-this-or-this
+          a(class='o-this-or-this__cols  +u-two-fifths' href='#')
+            | Free
+          span(class='o-this-or-this__cols  +u-one-fifth')
+            | or
+          a(class='o-this-or-this__cols  +u-two-fifths' href='#')
+            | Pro
+        .styleguide-code
+          p this will be code
+        div.o-this-or-this
+          p(class='o-this-or-this__cols  +u-two-fifths')
+            a(href='#') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          span(class='o-this-or-this__cols  +u-one-fifth')
+            | or
+          p(class='o-this-or-this__cols  +u-two-fifths')
+            a(href='#') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        .styleguide-code
+          p this will be code
+      h1 Stat Group
+      div.styleguide-objects.stat-group
+        .o-stat-group
+          dl.o-stat
+            dt.o-stat__title Tweets
+            dd.o-stat__value 27,740
+          dl.o-stat
+            dt.o-stat__title Following
+            dd.o-stat__value 11,529
+          dl.o-stat
+            dt.o-stat__title Followers
+            dd.o-stat__value 12,105
+      h1 Font Icons
+      div.styleguide-objects.icon-fonts
+        h2.styleguide-title--sub Font Icons - Github
+        div
+          i(class='o-icon  +octicons-alert')
+          i(class='o-icon  +octicons-alignment-align')
+          i(class='o-icon  +octicons-alignment-aligned-to')
+          i(class='o-icon  +octicons-alignment-unalign')
+          i(class='o-icon  +octicons-arrow-down')
+          i(class='o-icon  +octicons-arrow-left')
+          i(class='o-icon  +octicons-arrow-right')
+          i(class='o-icon  +octicons-arrow-small-down')
+          i(class='o-icon  +octicons-arrow-small-left')
+          i(class='o-icon  +octicons-arrow-small-right')
+          i(class='o-icon  +octicons-arrow-small-up')
+          i(class='o-icon  +octicons-arrow-up')
+          i(class='o-icon  +octicons-beer')
+          i(class='o-icon  +octicons-book')
+          i(class='o-icon  +octicons-bookmark')
+          i(class='o-icon  +octicons-briefcase')
+          i(class='o-icon  +octicons-broadcast')
+          i(class='o-icon  +octicons-browser')
+          i(class='o-icon  +octicons-bug')
+          i(class='o-icon  +octicons-calendar')
+          i(class='o-icon  +octicons-check')
+          i(class='o-icon  +octicons-checklist')
+          i(class='o-icon  +octicons-chevron-down')
+          i(class='o-icon  +octicons-chevron-left')
+          i(class='o-icon  +octicons-chevron-right')
+          i(class='o-icon  +octicons-chevron-up')
+          i(class='o-icon  +octicons-circle-slash')
+          i(class='o-icon  +octicons-circuit-board')
+          i(class='o-icon  +octicons-clippy')
+          i(class='o-icon  +octicons-clock')
+          i(class='o-icon  +octicons-cloud-download')
+          i(class='o-icon  +octicons-cloud-upload')
+          i(class='o-icon  +octicons-code')
+          i(class='o-icon  +octicons-color-mode')
+          i(class='o-icon  +octicons-comment')
+          i(class='o-icon  +octicons-comment-discussion')
+          i(class='o-icon  +octicons-credit-card')
+          i(class='o-icon  +octicons-dash')
+          i(class='o-icon  +octicons-dashboard')
+          i(class='o-icon  +octicons-database')
+          i(class='o-icon  +octicons-device-camera')
+          i(class='o-icon  +octicons-device-camera-video')
+          i(class='o-icon  +octicons-device-desktop')
+          i(class='o-icon  +octicons-device-mobile')
+          i(class='o-icon  +octicons-diff')
+          i(class='o-icon  +octicons-diff-added')
+          i(class='o-icon  +octicons-diff-ignored')
+          i(class='o-icon  +octicons-diff-modified')
+          i(class='o-icon  +octicons-diff-removed')
+          i(class='o-icon  +octicons-diff-renamed')
+          i(class='o-icon  +octicons-ellipsis')
+          i(class='o-icon  +octicons-eye')
+          i(class='o-icon  +octicons-file-binary')
+          i(class='o-icon  +octicons-file-code')
+          i(class='o-icon  +octicons-file-directory')
+          i(class='o-icon  +octicons-file-media')
+          i(class='o-icon  +octicons-file-pdf')
+          i(class='o-icon  +octicons-file-submodule')
+          i(class='o-icon  +octicons-file-symlink-directory')
+          i(class='o-icon  +octicons-file-symlink-file')
+          i(class='o-icon  +octicons-file-text')
+          i(class='o-icon  +octicons-file-zip')
+          i(class='o-icon  +octicons-flame')
+          i(class='o-icon  +octicons-fold')
+          i(class='o-icon  +octicons-gear')
+          i(class='o-icon  +octicons-gift')
+          i(class='o-icon  +octicons-gist')
+          i(class='o-icon  +octicons-gist-secret')
+          i(class='o-icon  +octicons-git-branch')
+          i(class='o-icon  +octicons-git-commit')
+          i(class='o-icon  +octicons-git-compare')
+          i(class='o-icon  +octicons-git-merge')
+          i(class='o-icon  +octicons-git-pull-request')
+          i(class='o-icon  +octicons-globe')
+          i(class='o-icon  +octicons-graph')
+          i(class='o-icon  +octicons-heart')
+          i(class='o-icon  +octicons-history')
+          i(class='o-icon  +octicons-home')
+          i(class='o-icon  +octicons-horizontal-rule')
+          i(class='o-icon  +octicons-hourglass')
+          i(class='o-icon  +octicons-hubot')
+          i(class='o-icon  +octicons-inbox')
+          i(class='o-icon  +octicons-info')
+          i(class='o-icon  +octicons-issue-closed')
+          i(class='o-icon  +octicons-issue-opened')
+          i(class='o-icon  +octicons-issue-reopened')
+          i(class='o-icon  +octicons-jersey')
+          i(class='o-icon  +octicons-jump-down')
+          i(class='o-icon  +octicons-jump-left')
+          i(class='o-icon  +octicons-jump-right')
+          i(class='o-icon  +octicons-jump-up')
+          i(class='o-icon  +octicons-key')
+          i(class='o-icon  +octicons-keyboard')
+          i(class='o-icon  +octicons-law')
+          i(class='o-icon  +octicons-light-bulb')
+          i(class='o-icon  +octicons-link')
+          i(class='o-icon  +octicons-link-external')
+          i(class='o-icon  +octicons-list-ordered')
+          i(class='o-icon  +octicons-list-unordered')
+          i(class='o-icon  +octicons-location')
+          i(class='o-icon  +octicons-lock')
+          i(class='o-icon  +octicons-logo-github')
+          i(class='o-icon  +octicons-mail')
+          i(class='o-icon  +octicons-mail-read')
+          i(class='o-icon  +octicons-mail-reply')
+          i(class='o-icon  +octicons-mark-github')
+          i(class='o-icon  +octicons-markdown')
+          i(class='o-icon  +octicons-megaphone')
+          i(class='o-icon  +octicons-mention')
+          i(class='o-icon  +octicons-microscope')
+          i(class='o-icon  +octicons-milestone')
+          i(class='o-icon  +octicons-mirror')
+          i(class='o-icon  +octicons-mortar-board')
+          i(class='o-icon  +octicons-move-down')
+          i(class='o-icon  +octicons-move-left')
+          i(class='o-icon  +octicons-move-right')
+          i(class='o-icon  +octicons-move-up')
+          i(class='o-icon  +octicons-mute')
+          i(class='o-icon  +octicons-no-newline')
+          i(class='o-icon  +octicons-octoface')
+          i(class='o-icon  +octicons-organization')
+          i(class='o-icon  +octicons-package')
+          i(class='o-icon  +octicons-paintcan')
+          i(class='o-icon  +octicons-pencil')
+          i(class='o-icon  +octicons-person')
+          i(class='o-icon  +octicons-pin')
+          i(class='o-icon  +octicons-playback-fast-forward')
+          i(class='o-icon  +octicons-playback-pause')
+          i(class='o-icon  +octicons-playback-play')
+          i(class='o-icon  +octicons-playback-rewind')
+          i(class='o-icon  +octicons-plug')
+          i(class='o-icon  +octicons-plus')
+          i(class='o-icon  +octicons-podium')
+          i(class='o-icon  +octicons-primitive-dot')
+          i(class='o-icon  +octicons-primitive-square')
+          i(class='o-icon  +octicons-pulse')
+          i(class='o-icon  +octicons-puzzle')
+          i(class='o-icon  +octicons-question')
+          i(class='o-icon  +octicons-quote')
+          i(class='o-icon  +octicons-radio-tower')
+          i(class='o-icon  +octicons-repo')
+          i(class='o-icon  +octicons-repo-clone')
+          i(class='o-icon  +octicons-repo-force-push')
+          i(class='o-icon  +octicons-repo-forked')
+          i(class='o-icon  +octicons-repo-pull')
+          i(class='o-icon  +octicons-repo-push')
+          i(class='o-icon  +octicons-rocket')
+          i(class='o-icon  +octicons-rss')
+          i(class='o-icon  +octicons-ruby')
+          i(class='o-icon  +octicons-screen-full')
+          i(class='o-icon  +octicons-screen-normal')
+          i(class='o-icon  +octicons-search')
+          i(class='o-icon  +octicons-server')
+          i(class='o-icon  +octicons-settings')
+          i(class='o-icon  +octicons-sign-in')
+          i(class='o-icon  +octicons-sign-out')
+          i(class='o-icon  +octicons-split')
+          i(class='o-icon  +octicons-squirrel')
+          i(class='o-icon  +octicons-star')
+          i(class='o-icon  +octicons-steps')
+          i(class='o-icon  +octicons-stop')
+          i(class='o-icon  +octicons-sync')
+          i(class='o-icon  +octicons-tag')
+          i(class='o-icon  +octicons-telescope')
+          i(class='o-icon  +octicons-terminal')
+          i(class='o-icon  +octicons-three-bars')
+          i(class='o-icon  +octicons-tools')
+          i(class='o-icon  +octicons-trashcan')
+          i(class='o-icon  +octicons-triangle-down')
+          i(class='o-icon  +octicons-triangle-left')
+          i(class='o-icon  +octicons-triangle-right')
+          i(class='o-icon  +octicons-triangle-up')
+          i(class='o-icon  +octicons-unfold')
+          i(class='o-icon  +octicons-unmute')
+          i(class='o-icon  +octicons-versions')
+          i(class='o-icon  +octicons-x')
+          i(class='o-icon  +octicons-zap')
+        .styleguide-code
+          p this will be code
+        h2.styleguide-title--sub Font Icons - Feather
+        div
+          i(class='o-icon  +feather-square-minus')
+          i(class='o-icon  +feather-eye')
+          i(class='o-icon  +feather-paper-clip')
+          i(class='o-icon  +feather-mail')
+          i(class='o-icon  +feather-toggle')
+          i(class='o-icon  +feather-layout')
+          i(class='o-icon  +feather-link')
+          i(class='o-icon  +feather-bell')
+          i(class='o-icon  +feather-lock')
+          i(class='o-icon  +feather-unlock')
+          i(class='o-icon  +feather-ribbon')
+          i(class='o-icon  +feather-image')
+          i(class='o-icon  +feather-signal')
+          i(class='o-icon  +feather-target')
+          i(class='o-icon  +feather-clipboard')
+          i(class='o-icon  +feather-clock')
+          i(class='o-icon  +feather-watch')
+          i(class='o-icon  +feather-air-play')
+          i(class='o-icon  +feather-camera')
+          i(class='o-icon  +feather-video')
+          i(class='o-icon  +feather-disc')
+          i(class='o-icon  +feather-printer')
+          i(class='o-icon  +feather-monitor')
+          i(class='o-icon  +feather-server')
+          i(class='o-icon  +feather-cog')
+          i(class='o-icon  +feather-heart')
+          i(class='o-icon  +feather-paragraph')
+          i(class='o-icon  +feather-align-justify')
+          i(class='o-icon  +feather-align-left')
+          i(class='o-icon  +feather-align-center')
+          i(class='o-icon  +feather-align-right')
+          i(class='o-icon  +feather-book')
+          i(class='o-icon  +feather-layers')
+          i(class='o-icon  +feather-stack')
+          i(class='o-icon  +feather-stack-2')
+          i(class='o-icon  +feather-paper')
+          i(class='o-icon  +feather-paper-stack')
+          i(class='o-icon  +feather-search')
+          i(class='o-icon  +feather-zoom-in')
+          i(class='o-icon  +feather-zoom-out')
+          i(class='o-icon  +feather-reply')
+          i(class='o-icon  +feather-circle-plus')
+          i(class='o-icon  +feather-circle-minus')
+          i(class='o-icon  +feather-circle-check')
+          i(class='o-icon  +feather-circle-cross')
+          i(class='o-icon  +feather-square-plus')
+          i(class='o-icon  +feather-square-minus')
+          i(class='o-icon  +feather-square-check')
+          i(class='o-icon  +feather-square-cross')
+          i(class='o-icon  +feather-microphone')
+          i(class='o-icon  +feather-record')
+          i(class='o-icon  +feather-skip-back')
+          i(class='o-icon  +feather-rewind')
+          i(class='o-icon  +feather-play')
+          i(class='o-icon  +feather-pause')
+          i(class='o-icon  +feather-stop')
+          i(class='o-icon  +feather-fast-forward')
+          i(class='o-icon  +feather-skip-forward')
+          i(class='o-icon  +feather-shuffle')
+          i(class='o-icon  +feather-repeat')
+          i(class='o-icon  +feather-folder')
+          i(class='o-icon  +feather-umbrella')
+          i(class='o-icon  +feather-moon')
+          i(class='o-icon  +feather-thermometer')
+          i(class='o-icon  +feather-drop')
+          i(class='o-icon  +feather-sun')
+          i(class='o-icon  +feather-cloud')
+          i(class='o-icon  +feather-cloud-upload')
+          i(class='o-icon  +feather-cloud-download')
+          i(class='o-icon  +feather-upload')
+          i(class='o-icon  +feather-download')
+          i(class='o-icon  +feather-location')
+          i(class='o-icon  +feather-location-2')
+          i(class='o-icon  +feather-map')
+          i(class='o-icon  +feather-battery')
+          i(class='o-icon  +feather-head')
+          i(class='o-icon  +feather-briefcase')
+          i(class='o-icon  +feather-speech-bubble')
+          i(class='o-icon  +feather-anchor')
+          i(class='o-icon  +feather-globe')
+          i(class='o-icon  +feather-box')
+          i(class='o-icon  +feather-reload')
+          i(class='o-icon  +feather-share')
+          i(class='o-icon  +feather-marquee')
+          i(class='o-icon  +feather-marquee-plus')
+          i(class='o-icon  +feather-marquee-minus')
+          i(class='o-icon  +feather-tag')
+          i(class='o-icon  +feather-power')
+          i(class='o-icon  +feather-command')
+          i(class='o-icon  +feather-alt')
+          i(class='o-icon  +feather-esc')
+          i(class='o-icon  +feather-bar-graph')
+          i(class='o-icon  +feather-bar-graph-2')
+          i(class='o-icon  +feather-pie-graph')
+          i(class='o-icon  +feather-star')
+          i(class='o-icon  +feather-arrow-left')
+          i(class='o-icon  icon-eighty-store')
+          i(class='o-icon  +feather-arrow-right')
+          i(class='o-icon  +feather-arrow-up')
+          i(class='o-icon  +feather-arrow-down')
+          i(class='o-icon  +feather-volume')
+          i(class='o-icon  +feather-mute')
+          i(class='o-icon  +feather-content-right')
+          i(class='o-icon  +feather-content-left')
+          i(class='o-icon  +feather-grid')
+          i(class='o-icon  +feather-grid-2')
+          i(class='o-icon  +feather-columns')
+          i(class='o-icon  +feather-loader')
+          i(class='o-icon  +feather-bag')
+          i(class='o-icon  +feather-ban')
+          i(class='o-icon  +feather-flag')
+          i(class='o-icon  +feather-trash')
+          i(class='o-icon  +feather-expand')
+          i(class='o-icon  +feather-contract')
+          i(class='o-icon  +feather-maximize')
+          i(class='o-icon  +feather-minimize')
+          i(class='o-icon  +feather-plus')
+          i(class='o-icon  +feather-minus')
+          i(class='o-icon  +feather-check')
+          i(class='o-icon  +feather-cross')
+          i(class='o-icon  +feather-move')
+          i(class='o-icon  +feather-delete')
+          i(class='o-icon  +feather-menu')
+          i(class='o-icon  +feather-archive')
+          i(class='o-icon  +feather-inbox')
+          i(class='o-icon  +feather-outbox')
+          i(class='o-icon  +feather-file')
+          i(class='o-icon  +feather-file-add')
+          i(class='o-icon  +feather-file-subtract')
+          i(class='o-icon  +feather-help')
+          i(class='o-icon  +feather-open')
+          i(class='o-icon  +feather-ellipsis')
+        .styleguide-code
+          p this will be code
+      h1 Group Buttons
+      div.styleguide-objects.group-buttons
+        .o-btn-group(role='group', aria-label='...')
+          button(type='button') Left
+          button(type='button') Middle
+          button(type='button') Right
+        .o-btn-group(role='group', aria-label='...')
+          button.o-btn(type='button') Left
+          button.o-btn(type='button') Middle
+          button.o-btn(type='button') Right
+        .o-btn-group(class="rounded" role='group', aria-label='...')
+          button.o-btn(type='button') left
+          button.o-btn(type='button') Middle
+          button.o-btn(type='button') Right
+        .o-btn-toolbar(role='toolbar', aria-label='Toolbar with button groups')
+          .o-btn-toolbar__group(role='group', aria-label='First group')
+            button.o-btn(type='button') 1
+            button.o-btn(type='button') 2
+            button.o-btn(type='button') 3
+            button.o-btn(type='button') 4
+          .o-btn-toolbar__group(role='group', aria-label='Second group')
+            button.o-btn(class="+active" type='button') 5
+            button.o-btn(type='button') 6
+            button.o-btn(type='button') 7
+          .o-btn-toolbar__group(role='group', aria-label='Third group')
+            button.o-btn(type='button') 8
+        .styleguide-code
+          p code here
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form(style="font-family: source-sans-pro")
+          fieldset
+            legend Legend Title
+            ul
+              li
+                p(class='o-notify  +u-success  +u-mb') notify: a message about input
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name" placeholder='email')
+                p.o-form__box-help(class='+u-error  +u-p-half-box') a message about input
+              li
+                p(class='o-notify  +u-warning  +u-mb') Notify: a message about input
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name" placeholder='email')
+                p.o-form__box-help a message about input
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name" placeholder='email')
+                p.o-form__box-help a message about input
+              li
+                p(class='o-notify  +u-info  +u-mb') Notify: a message about input
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name" placeholder='email')
+                p.o-form__box-help a message about input
+              li
+                button.o-btn(type='button') Submit
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form
+          fieldset
+            legend Legend Title
+            ul
+              li(class='+u-2-2')
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li(class='+u-2-6')
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li(class='+u-1-4')
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li(class='+u-2-3')
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+              li
+                button.o-btn(type='button') Submit
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form
+          fieldset
+            legend Legend Title
+            ul.o-form__g-2
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+              li(class='+u-2-2')
+                button.o-btn(type='button') Submit
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form
+          fieldset
+            legend Legend Title
+            ul.o-form__g-3
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li.o-form__g-fw
+                button.o-btn.--full(type='button') Submit
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form
+          fieldset
+            legend Legend Title
+            ul.o-form__g-4
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+      h1 Forms
+      div.styleguide-objects.forms
+        form.o-form
+          fieldset
+            legend Legend Title
+            ul.o-form__g-5
+              li
+                label(for="") Name:
+                input.o-form__input-fw(type="text", name="name")
+              li
+                label(for="") Email:
+                input.o-form__input-fw(type="email", name="name")
+              li
+                label(for="") Password:
+                input.o-form__input-fw(type="password", name="name")
+              li
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+              li
+                label(for="") Telephone:
+                input.o-form__input-fw(type="tel", name="name")
+      h1 Flyout
+      div.styleguide-objects.flyout
+        .o-flyout.o-btn
+          | Flyout Button
+          .o-flyout__content
+            ul(class='+u-unstyled  o-nav  --stacked')
+              li
+                a.o-btn list item
+              li
+                a.o-btn list item
+              li
+                a.o-btn list item
+              li
+                a.o-btn list item
+        div(class='o-btn  o-flyout  --alt')
+          | Flyout Button
+          .o-flyout__content
+            ul(class='+u-unstyled  o-nav  --stacked')
+              li
+                a.o-btn list item
+              li
+                a.o-btn list item
+              li
+                a.o-btn list item
+              li
+                a.o-btn list item
+        .styleguide-code
+          p code here
+      h1 Icon Text or Text Icon
+      div.styleguide-objects.text-image-icon
+        p(class='o-image-text')
+          i.o-image-text__icon(class='+u-circle')
+          | Dribble
+        p.o-image-text.--rev Twitter
+          i(class='o-image-text__icon  +icon-twitter')
+      h1 Rules
+      div.styleguide-objects.rules
+        h2.styleguide-title--sub default
+        hr
+        .styleguide-code
+          p this will be code
+        h2.styleguide-title--sub Rule
+        hr(class='o-rule')
+        .styleguide-code
+          p this will be code
+        h2.styleguide-title--sub Dotted
+        hr(class='o-rule  --dotted')
+        .styleguide-code
+          p this will be code
+        h2.styleguide-title--sub Dashed
+        hr(class='o-rule  --dashed')
+        .styleguide-code
+          p this will be code
+        h2.styleguide-title--sub Ornament
+        hr(class='o-rule  --ornament' data-ornament=".(-).")
+        .styleguide-code
+          p this will be code
+      div.styleguide-objects.split
+        h1 Split
+        dl.o-split
+          dt.o-split__title Burger and fries
+          dd £5.99
+          dt.o-split__title Fillet steak
+          dd £19.99
+          dt.o-split__title Ice cream
+          dd £2.99
+        .styleguide-code
+          p this will be code
+        ol.o-split
+          li.first
+            b.o-split__title 1st place
+            | Bob
+          li.second
+            b.o-split__title 2nd place
+            | Lilly
+          li.third
+            b.o-split__title 3rd place
+            | Ted
+        .styleguide-code
+          p code here
+      div.styleguide-objects.sprite
+        h1 Sprite
+        div
+          i(class='o-sprite') default
+          p default
+        div(class='o-sprite  +red-square')
+        div(class='o-sprite  +blue-circle')
+        div(class='o-sprite  +orange-sqaure')
+        div(class='o-sprite  +green-circle')
+        div(class='o-sprite  +green-circle')
+        ul(class='+u-unstyled')
+          li
+            a(href='/')
+              i(class='o-sprite  +red-square') Foo bar
+          li
+            a(href='/')
+              i(class='o-sprite  +blue-circle') Foo bar
+          li
+            a(href='#' class='o-sprite  +orange-sqaure') Foo bar or
+            a(href='#' class='o-sprite  +green-circle') Bar baz
+          li
+            a(href='#')
+              i(class='o-sprite   +red-square')
+              | Foo bar
+          li
+            a(href='#')
+              i(class='o-sprite   +blue-circle')
+              | Foo bar
+          li
+            a(class='o-sprite   +orange-sqaure' href='#') Foo bar
+            | or
+            a(class='o-sprite   +green-circle' href='#') Bar baz
+        .styleguide-code
+          p code here
+      div.styleguide-objects.island
+        h1 island
+        .o-island
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        .styleguide-code
+          p code here
+      h1 Emphasis
+      div.styleguide-objects.emphasis
+        p(class='o-emp  +u-c-error') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-c-info') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-c-warning') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-c-success') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-c-danger') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-p-box  +u-error') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-p-box  +u-info') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-p-box  +u-warning') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-p-box  +u-success') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        p(class='o-emp  +u-p-box  +u-danger') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        .styleguide-code
+          p code here
+      h1 Breadcrumbs
+      div.styleguide-objects.breadcrumb
+        h2.styleguide-title--sub Breadcrumb
+        ul(class='o-nav  o-breadcrumb')
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+        h2.styleguide-title--sub Line
+        ul(class='o-nav  o-breadcrumb  --line')
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+        h2.styleguide-title--sub Path
+        ul(class='o-nav  o-breadcrumb  --path')
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+        h2.styleguide-title--sub Data
+        ul(class='o-nav  o-breadcrumb  --data')
+          li(data-breadcrumb="→")
+            a(class="" href='/') one
+          li(data-breadcrumb="→")
+            a(class="" href='/') one
+          li(data-breadcrumb="→")
+            a(class="" href='/') one
+          li(data-breadcrumb="→")
+            a(class="" href='/') one
+        h2.styleguide-title--sub Arrow
+        ul(class='o-nav  o-breadcrumb  --arrow')
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+          li
+            a(class="" href='/') one
+        h2.styleguide-title--sub Arrow
+        ul(class='o-nav  o-breadcrumb  --arrow')
+          a(class="" href='/') one
+          a(class="" href='/') one
+          a(class="" href='/') one
+          a(class="" href='/') one
+        .styleguide-code
+          p code here
+      div.styleguide-objects.label-pills
+        h1 Pills and Labels
+        p.o-label hello
+        p(class='o-label  +u-success') hello
+        p(class='o-label  +u-info') hello
+        p(class='o-label  +u-danger') hello
+        p(class='o-label  +u-warning') hello
+        p(class='o-label  +u-error') hello
+        p(class='o-label  +disabled') hello
+        p(class='o-label  --pill  +disabled') hello
+        p(class='o-label  --pill  +u-success') hello
+        p(class='o-label  --pill  +u-info') hello
+        p(class='o-label  --pill  +u-danger') hello
+        p(class='o-label  --pill  +u-warning') hello
+        p(class='o-label  --pill  +u-error') hello
+        p(class='o-label  --pill  +disabled') hello
+        .styleguide-code
+          p code here
+      h1 Text Columns
+      div.styleguide-objects.text-columns
+        h2.styleguide-title--sub 2 Columns
+        p(class='o-cols  --2') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        h2.styleguide-title--sub 3 Columns
+        p(class='o-cols  --3') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        h2.styleguide-title--sub 4 Columns
+        p(class='o-cols  --4') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        h2.styleguide-title--sub 5 Columns
+        p(class='o-cols  --5') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        .styleguide-code
+          p code here
+      h1 nav
+      div.styleguide-objects.nav
+        ul(class='o-nav')
+          a(href='/') one
+          a(href='/') one
+          a(href='/') one
+          a(href='/') one
+        ul(class='o-nav  --block')
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+        ul(class='o-nav  --fit')
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+        ul(class='o-nav  --banner')
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+        ul(class='o-nav  --stacked')
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+        ul(class='o-nav  --keywords')
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+          li
+            a(href='/') one
+        .styleguide-code
+          p code here
+      div.styleguide-objects.lists
+        h1 lists
+        ul
+          li hello
+          li hello
+          li hello
+          li hello
+        ol
+          li hello
+          li hello
+          li hello
+          li hello
+        dl
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+        ul.o-list
+          li hello
+          li hello
+          li hello
+          li hello
+        ol.o-list
+          li hello
+          li hello
+          li hello
+          li hello
+        dl.o-list
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+        ul(class='o-list  --numbered')
+          li this is ul that is number but has li > ul > li numbered: default with --numbered
+            ul
+              li hello
+              li hello
+              li hello
+          li hello
+          li hello
+        ul(class='o-list  --numbered')
+          li this is ul that is number but has li > ul > li disc list style
+            ul
+              li.o-list__disc hello
+              li.o-list__disc hello
+              li.o-list__disc hello
+          li hello
+          li hello
+        ol(class='o-list  --numbered')
+          li this is ol that is number but has li > ol > li disc list style
+            ol
+              li.o-list__disc hello
+              li.o-list__disc hello
+              li.o-list__disc hello
+          li hello
+          li hello
+        ul(class='o-list  --inline')
+          li hello
+          li hello
+          li hello
+          li hello
+        ul(class='o-list  --horizontal')
+          li hello
+          li hello
+          li hello
+          li hello
+        ol(class='o-list  --horizontal')
+          li hello
+          li hello
+          li hello
+          li hello
+        dl(class='o-list  --horizontal')
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+          dt hello
+          dd hello
+        .styleguide-code
+          p code here
+      h1.styleguide-title Media
+      div.styleguide-objects.media
+        h2.styleguide-title--sub media
+        .o-media
+          img(class='o-media__img' src='http://placehold.it/200' alt="")
+          .media__body
+            h1 Heading
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        h2.styleguide-title--sub media
+        .o-media
+          img(class='o-media__img --right' src='http://placehold.it/200' alt="")
+          .media__body
+            h1 Heading
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .styleguide-code
+          p code here
+      div.styleguide-objects.buttons
+        h1 Buttons
+        a(class='o-btn  --small', href='/') Google
+        a(class='o-btn  --large', href='/') Google
+        a(class='o-btn  --huge', href='/') Google
+        a(class='o-btn  --full', href='/') Google
+        a(class='o-btn  --alpha', href='/') Google
+        a(class='o-btn  --beta', href='/') Google
+        a(class='o-btn  --gamma', href='/') Google
+        a(class='o-btn  --natural', href='/') Google
+        a(class='o-btn  --inactive', href='/') Google
+        a(class='o-btn  --round', href='/') Google
+        a(class='o-btn  +rounded', href='/') Google
+        a(class='o-btn  +positive', href='/') Google
+        a(class='o-btn  +negative', href='/') Google
+        .styleguide-code
+          p code here
+      h1 Figure
+      div.styleguide-objects.figure
+        h2.styleguide-title--sub Figure Add
+        figure.o-fig
+          img(src= "http://placehold.it/200")
+          figcaption.o-fig__capt Lorem ipsum dolor sit amet
+        h2.styleguide-title--sub Figure with rounded image
+        figure.o-fig
+          img(class='+u-rounded' src= "http://placehold.it/200")
+          figcaption.o-fig__capt Lorem ipsum dolor sit amet
+        .styleguide-code
+          p code here
+      div.styleguide-objects.images
+        h1 Images Objects
+        h2.styleguide-title--sub Standard
+        img(src='http://placehold.it/200')
+        h2.styleguide-title--sub Right
+        img(class='o-img  --right' src='http://placehold.it/200')
+        h2.styleguide-title--sub Left
+        img(class='o-img  --left' src='http://placehold.it/200')
+        h2.styleguide-title--sub Center
+        img(class='o-img  --center' src='http://placehold.it/200')
+        h2.styleguide-title--sub Circle
+        img(class='o-img  --circle' src='http://placehold.it/200')
+        h2.styleguide-title--sub Rounded
+        img(class='o-img  +rounded' src='http://placehold.it/200')
+        h2.styleguide-title--sub Full Width
+        div(style='width:200px')
+          img(class='o-img  --full' src='http://placehold.it/200')
+      h1 Thumbnail
+      div.styleguide-objects.thumbnail
+        h2.styleguide-title--sub Standard
+        .o-thumb
+          img(class="o-thumb__item" src= "http://placehold.it/200")
+        h2.styleguide-title--sub Thumbnail with rounded
+        .o-thumb
+          img(class="o-thumb__item  +u-rounded" src= "http://placehold.it/200")
+        .styleguide-code
+          p code here
+      h1 Notify
+      div.styleguide-objects.notify
+        .o-notify(class='+u-success')
+          p success notify
+        .o-notify(class='+u-danger')
+          p danger notify
+        .o-notify(class='+u-error')
+          p error notify
+        .o-notify(class='+u-warning')
+          p warning notify
+        .o-notify(class='+u-info')
+          p info notify
+        .o-notify(class='+u-disable')
+          p disabled notify
+        .styleguide-code
+          p this will be code
+      h1 Block Lists
+      div.styleguide-objects.block-list
+        ul.o-block-list
+          li list
+          li
+            a(href="/").o-block-list__link another
+          li another
+          li another
+        h2.styleguide-title--sub dl Block Lists
+        dl.o-block-list
+          dt hell
+          dd hell
+          dt hell
+          dd hell
+          dt hell
+          dd hell
+        h2.styleguide-title--sub ul Block Lists bordered
+        ul.o-block-list.--bordered
+          li above
+          li list
+          li asdfas
+          li asdfa
+        h2.styleguide-title--sub dl Block Lists bordered
+        dl.o-block-list.--bordered
+          dt hell
+          dd hell
+          dt hell
+          dd hell
+          dt hell
+          dd hell
+        .styleguide-code
+          p this will be code
+      h1(class='styleguide-title +u-font-large') Utilites
+      h1.styleguide-title Display
+      div.styleguide-utilites.displays
+        div(class='+u-block')
+          p u-block
+        div(class='+u-inline')
+          p u-inline
+        div(class='+u-inline-block')
+          p u-inline-block
+        div(class='+u-table')
+          p u-table
+        div(class='+u-flex')
+          p u-flex
+      h1.styleguide-title Widths
+      div.styleguide-utilites.widths
+        h2.styleguide-title--sub Whole & Halves
+        div(class='+u-one-half  +u-info')
+          p(class='+u-inline-block') 50%
+          p(class='+u-inline-block') one-half
+        div(class='+u-one-whole  +u-info')
+          p(class='+u-inline-block') 100%
+          p(class='+u-inline-block') one-whole
+        h2.styleguide-title--sub Thirds
+        div(class='+u-one-third  +u-warning')
+          p(class='+u-inline-block') 33.333%
+          p(class='+u-inline-block') one-third
+        div(class='+u-two-thirds  +u-warning')
+          p(class='+u-inline-block') 66.666%
+          p(class='+u-inline-block') two-thirds
+        div(class='+u-one-whole  +u-warning')
+          p(class='+u-inline-block') 66.666%
+          p(class='+u-inline-block') one-whole
+        h2.styleguide-title--sub Quarters
+        div(class='+u-one-quarter  +u-danger')
+          p(class='+u-inline-block') 25%
+          p(class='+u-inline-block') one-quarters
+        div(class='+u-two-quarters  +u-danger')
+          p(class='+u-inline-block') 50%
+          p(class='+u-inline-block') two-quarters
+        div(class='+u-three-quarters  +u-danger')
+          p(class='+u-inline-block') 75%
+          p(class='+u-inline-block') three-quarters
+        div(class='+u-one-whole  +u-danger')
+          p(class='+u-inline-block') 100%
+          p(class='+u-inline-block') one-whole
+        h2.styleguide-title--sub Fifths
+        div(class='+u-one-fifth  +u-error')
+          p(class='+u-inline-block') 20%
+          p(class='+u-inline-block') one-fifths
+        div(class='+u-two-fifths  +u-error')
+          p(class='+u-inline-block') 40%
+          p(class='+u-inline-block') two-fifths
+        div(class='+u-three-fifths  +u-error')
+          p(class='+u-inline-block') 60%
+          p(class='+u-inline-block') three-fifths
+        div(class='+u-four-fifths  +u-error')
+          p(class='+u-inline-block') 80%
+          p(class='+u-inline-block') four-fifths
+        div(class='+u-one-whole  +u-error')
+          p(class='+u-inline-block') 100%
+          p(class='+u-inline-block') one-whole
+        h2.styleguide-title--sub Sixths
+        div(class='+u-one-sixth  +u-success')
+          p(class='+u-inline-block') 16.666%
+          p(class='+u-inline-block') one-sixth
+        div(class='+u-two-sixths  +u-success')
+          p(class='+u-inline-block') 33.333%
+          p(class='+u-inline-block') two-sixths
+        div(class='+u-three-sixths  +u-success')
+          p(class='+u-inline-block') 50%
+          p(class='+u-inline-block') three-sixths
+        div(class='+u-four-sixths  +u-success')
+          p(class='+u-inline-block') 66.666%
+          p(class='+u-inline-block') four-sixths
+        div(class='+u-one-whole  +u-success')
+          p(class='+u-inline-block') 83.333%
+          p(class='+u-inline-block') five-sixths
+        div(class='+u-sixth-sixths  +u-success')
+          p(class='+u-inline-block') 100%
+          p(class='+u-inline-block') one-whole
+        h2.styleguide-title--sub Eighths
+        div(class='+u-one-eighth  +u-warning')
+          p(class='+u-inline-block') 12.5%
+          p(class='+u-inline-block') one-eighth
+        div(class='+u-two-eighths  +u-warning')
+          p(class='+u-inline-block') 33.333%
+          p(class='+u-inline-block') two-eighths
+        div(class='+u-three-eighths  +u-warning')
+          p(class='+u-inline-block') 37.5%
+          p(class='+u-inline-block') three-eighths
+        div(class='+u-four-eighths  +u-warning')
+          p(class='+u-inline-block') 50%
+          p(class='+u-inline-block') four-eighths
+        div(class='+u-five-eighths  +u-warning')
+          p(class='+u-inline-block') 62.5%
+          p(class='+u-inline-block') five-eighths
+        div(class='+u-six-eighths  +u-warning')
+          p(class='+u-inline-block') 75%;
+          p(class='+u-inline-block') six-eighths
+        div(class='+u-seven-eighths  +u-warning')
+          p(class='+u-inline-block') 87.5%
+          p(class='+u-inline-block') six-eighths
+        div(class='+u-one-whole  +u-warning')
+          p(class='+u-inline-block') 100%
+          p(class='+u-inline-block') one-whole
+        h2.styleguide-title--sub Tenths
+        div(class='+u-one-tenth  +u-danger')
+          p(class='+u-inline-block') 10%
+          p(class='+u-inline-block') one-tenth
+        div(class='+u-two-tenths  +u-danger')
+          p(class='+u-inline-block') 20%;
+          p(class='+u-inline-block') two-tenths
+        div(class='+u-three-tenths  +u-danger')
+          p(class='+u-inline-block') 30%;
+          p(class='+u-inline-block') three-tenths
+        div(class='+u-four-tenths  +u-danger')
+          p(class='+u-inline-block') 40%
+          p(class='+u-inline-block') four-tenths
+        div(class='+u-five-tenths  +u-danger')
+          p(class='+u-inline-block') 50%
+          p(class='+u-inline-block') five-tenths
+        div(class='+u-six-tenths  +u-danger')
+          p(class='+u-inline-block') 60%
+          p(class='+u-inline-block') six-tenths
+        div(class='+u-seven-tenths  +u-danger')
+          p(class='+u-inline-block') 70%
+          p(class='+u-inline-block') seven-tenths
+        div(class='+u-eight-tenths  +u-danger')
+          p(class='+u-inline-block') 80%
+          p(class='+u-inline-block') eight-tenths
+        div(class='+u-nine-tenths  +u-danger')
+          p(class='+u-inline-block') 90%
+          p(class='+u-inline-block') nine-tenths
+        div(class='+u-one-whole  +u-danger')
+          p(class='+u-inline-block') 100%
+          p(class='+u-inline-block') one-whole
+        h2.styleguide-title--sub Twelfths
+        div(class='+u-one-twelfth  +u-error')
+          p(class='+u-inline-block') 8.333%
+          p(class='+u-inline-block') one-twelfth
+        div(class='+u-two-twelfths  +u-error')
+          p(class='+u-inline-block') 16.666%
+          p(class='+u-inline-block') two-twelfths
+        div(class='+u-three-twelfths  +u-error')
+          p(class='+u-inline-block') 25%
+          p(class='+u-inline-block') three-twelfths
+        div(class='+u-four-twelfths  +u-error')
+          p(class='+u-inline-block') 33.333%
+          p(class='+u-inline-block') four-twelfths
+        div(class='+u-five-twelfths  +u-error')
+          p(class='+u-inline-block') 41.666%
+          p(class='+u-inline-block') five-twelfths
+        div(class='+u-six-twelfths  +u-error')
+          p(class='+u-inline-block') 50%
+          p(class='+u-inline-block') six-twelfths
+        div(class='+u-seven-twelfths  +u-error')
+          p(class='+u-inline-block') 58.333%
+          p(class='+u-inline-block') seven-twelfths
+        div(class='+u-eight-twelfths  +u-error')
+          p(class='+u-inline-block') 66.666%
+          p(class='+u-inline-block') eight-twelfths
+        div(class='+u-nine-twelfths  +u-error')
+          p(class='+u-inline-block') 75%
+          p(class='+u-inline-block') nine-twelfths
+        div(class='+u-ten-twelfths  +u-error')
+          p(class='+u-inline-block') 83.333%
+          p(class='+u-inline-block') ten-twelfths
+        div(class='+u-eleven-twelfths  +u-error')
+          p(class='+u-inline-block') 91.666%
+          p(class='+u-inline-block') eleven-twelfths
+        div(class='+u-one-whole  +u-error')
+          p(class='+u-inline-block') 100%
+          p(class='+u-inline-block') one-whole
+      h1.styleguide-title Widths
+      div.styleguide-utilites.widths
+        h2.styleguide-title--sub 1/1 & 1/2
+        div(class='+u-1-1  +u-success')
+          p(class='+u-inline-block') 1/1
+          p(class='+u-inline-block') 100%
+        h2.styleguide-title--sub Full Width Halves
+        div(class='+u-1-2  +u-info')
+          p(class='+u-inline-block') 1/2
+          p(class='+u-inline-block') 50%
+        h2.styleguide-title--sub 1/3
+        div(class='+u-1-3  +u-warning')
+          p(class='+u-inline-block') 1/3
+          p(class='+u-inline-block') 33.333%
+        div(class='+u-2-3  +u-warning')
+          p(class='+u-inline-block') 2/3
+          p(class='+u-inline-block') 66.666%
+        div(class='+u-3-3  +u-danger')
+          p(class='+u-inline-block') 3/3
+          p(class='+u-inline-block') 99.999%
+        h2.styleguide-title--sub 1/4
+        div(class='+u-1-4 +u-danger')
+          p(class='+u-inline-block') 1/4
+          p(class='+u-inline-block') 25%
+        div(class='+u-2-4  +u-danger')
+          p(class='+u-inline-block') 2/4
+          p(class='+u-inline-block') 50%
+        div(class='+u-3-4  +u-danger')
+          p(class='+u-inline-block') 3/4
+          p(class='+u-inline-block') 75%
+        div(class='+u-4-4  +u-danger')
+          p(class='+u-inline-block') 4/4
+          p(class='+u-inline-block') 100%
+        h2.styleguide-title--sub 1/5
+        div(class='+u-1-5 +u-error')
+          p(class='+u-inline-block') 1/5
+          p(class='+u-inline-block') 20%
+        div(class='+u-2-5  +u-error')
+          p(class='+u-inline-block') 2/5
+          p(class='+u-inline-block') 40%
+        div(class='+u-3-5  +u-error')
+          p(class='+u-inline-block') 3/5
+          p(class='+u-inline-block') 60%
+        div(class='+u-4-5  +u-error')
+          p(class='+u-inline-block') 4/5
+          p(class='+u-inline-block') 1/5
+        div(class='+u-5-5  +u-error')
+          p(class='+u-inline-block') 5/5
+          p(class='+u-inline-block') 100%
+        h2.styleguide-title--sub 1/6
+        div(class='+u-1-6  +u-success')
+          p(class='+u-inline-block') 1/6
+          p(class='+u-inline-block') 16.666
+        div(class='+u-2-6  +u-success')
+          p(class='+u-inline-block') 2/6
+          p(class='+u-inline-block') 33.333%
+        div(class='+u-3-6  +u-success')
+          p(class='+u-inline-block') 3/6
+          p(class='+u-inline-block') 50%
+        div(class='+u-4-6  +u-success')
+          p(class='+u-inline-block') 4/6
+          p(class='+u-inline-block') 66.666%
+        div(class='+u-5-6  +u-success')
+          p(class='+u-inline-block') 5/6
+          p(class='+u-inline-block') 83.333%
+        div(class='+u-6-6  +u-success')
+          p(class='+u-inline-block') 6/6
+          p(class='+u-inline-block') 100%
+        h2.styleguide-title--sub 1/8
+        div(class='+u-1-8  +u-warning')
+          p(class='+u-inline-block') 1/8
+          p(class='+u-inline-block') 12.5%
+        div(class='+u-2-8  +u-warning')
+          p(class='+u-inline-block') 2/8
+          p(class='+u-inline-block') 25%
+        div(class='+u-3-8  +u-warning')
+          p(class='+u-inline-block') 3/8
+          p(class='+u-inline-block') 37.5%
+        div(class='+u-4-8  +u-warning')
+          p(class='+u-inline-block') 4/8
+          p(class='+u-inline-block') 50%
+        div(class='+u-5-8  +u-warning')
+          p(class='+u-inline-block') 5/8
+          p(class='+u-inline-block') 62.5%
+        div(class='+u-6-8  +u-warning')
+          p(class='+u-inline-block') 6/8
+          p(class='+u-inline-block') 75%
+        div(class='+u-7-8  +u-warning')
+          p(class='+u-inline-block') 7/8
+          p(class='+u-inline-block') 87.5%
+        div(class='+u-8-8  +u-success')
+          p(class='+u-inline-block') 8/8
+          p(class='+u-inline-block') 100%
+        h2.styleguide-title--sub 1/10
+        div(class='+u-1-10  +u-danger')
+          p(class='+u-inline-block') 1/10
+          p(class='+u-inline-block') 10%
+        div(class='+u-2-10  +u-danger')
+          p(class='+u-inline-block') 2/10
+          p(class='+u-inline-block') 20%
+        div(class='+u-3-10  +u-danger')
+          p(class='+u-inline-block') 3/10
+          p(class='+u-inline-block') 30%
+        div(class='+u-4-10  +u-danger')
+          p(class='+u-inline-block') 4/10
+          p(class='+u-inline-block') 40%
+        div(class='+u-5-10  +u-danger')
+          p(class='+u-inline-block') 5/10
+          p(class='+u-inline-block') 50%
+        div(class='+u-6-10  +u-danger')
+          p(class='+u-inline-block') 6/10
+          p(class='+u-inline-block') 60%
+        div(class='+u-7-10  +u-danger')
+          p(class='+u-inline-block') 7/10
+          p(class='+u-inline-block') 70%
+        div(class='+u-8-10  +u-danger')
+          p(class='+u-inline-block') 8/10
+          p(class='+u-inline-block') 80%
+        div(class='+u-9-10  +u-danger')
+          p(class='+u-inline-block') 9/10
+          p(class='+u-inline-block') 90%
+        div(class='+u-10-10  +u-success')
+          p(class='+u-inline-block') 10/10
+          p(class='+u-inline-block') 100%
+        h2.styleguide-title--sub 1/12
+        div(class='+u-1-12  +u-error')
+          p(class='+u-inline-block') 1/12
+          p(class='+u-inline-block') 8.333
+        div(class='+u-2-12  +u-error')
+          p(class='+u-inline-block') 2/12
+          p(class='+u-inline-block') 16.666%
+        div(class='+u-3-12  +u-error')
+          p(class='+u-inline-block') 3/12
+          p(class='+u-inline-block') 25%
+        div(class='+u-4-12  +u-error')
+          p(class='+u-inline-block') 4/12
+          p(class='+u-inline-block') 33.333%
+        div(class='+u-5-12  +u-error')
+          p(class='+u-inline-block') 5/12
+          p(class='+u-inline-block') 41.666
+        div(class='+u-6-12  +u-error')
+          p(class='+u-inline-block') 6/12
+          p(class='+u-inline-block') 50%
+        div(class='+u-7-12  +u-error')
+          p(class='+u-inline-block') 7/12
+          p(class='+u-inline-block') 58.33
+        div(class='+u-8-12  +u-error')
+          p(class='+u-inline-block') 8/12
+          p(class='+u-inline-block') 66.666%
+        div(class='+u-9-12  +u-error')
+          p(class='+u-inline-block') 9/12
+          p(class='+u-inline-block') 75%
+        div(class='+u-10-12  +u-error')
+          p(class='+u-inline-block') 10/12
+          p(class='+u-inline-block') 83.333%
+        div(class='+u-11-12  +u-error')
+          p(class='+u-inline-block') 11/12
+          p(class='+u-inline-block') 91.666%
+        div(class='+u-12-12  +u-error')
+          p(class='+u-inline-block') 12/12
+          p(class='+u-inline-block') 100%
+        .styleguide-code
+           this will be code
+      h1.styleguide-title Spaces Margins & Padding
+      div.styleguide-utilites.spaces
+        h2.styleguide-title--sub 6x Space Margin
+        div
+          div.margin
+            p(class='+u-mt-6')
+              span Margin Top 6 ↑
+        div
+          div.margin
+            p(class='+u-mr-6  +u-text-right')
+              span Margin Right x 6 →
+        div
+          div.margin
+            p(class='+u-mb-6')
+              span Margin Bottom x 6 ↓
+        div
+          div.margin
+            p(class='+u-ml-6')
+              span ← Margin Left x 6
+        h2.styleguide-title--sub 6x Space Margin
+        div
+          div
+            div.padding(class='+u-pt-6')
+              p
+                span Padding Top 6 ↑
+        div
+          div
+            div.padding(class='+u-pr-6')
+              p(class='+u-text-right')
+                span Padding Right x 6 →
+        div
+          div
+            div.padding(class='+u-pb-6')
+              p
+                span Padding Bottom x 6 ↓
+        div
+          div
+            div.padding(class='+u-pl-6')
+              p
+                span ← Padding Left x 6
+        h2.styleguide-title--sub 5x Space Margin
+        div
+          div.margin
+            p(class='+u-mt-5')
+              span Margin Top 5 ↑
+        div
+          div.margin
+            p(class='+u-mr-5  +u-text-right')
+              span Margin Right x 5 →
+        div
+          div.margin
+            p(class='+u-mb-5')
+              span Margin Bottom x 5 ↓
+        div
+          div.margin
+            p(class='+u-ml-5')
+              span ← Margin Left x 5
+        h2.styleguide-title--sub 5x Space Padding
+        div
+          div
+            div.padding(class='+u-pt-5')
+              p
+                span Padding Top 5 ↑
+        div
+          div
+            div.padding(class='+u-pr-5')
+              p(class='+u-text-right')
+                span Padding Right x 5 →
+        div
+          div
+            div.padding(class='+u-pb-5')
+              p
+                span Padding Bottom x 5 ↓
+        div
+          div
+            div.padding(class='+u-pl-5')
+              p
+                span ← Padding Left x 5
+        h2.styleguide-title--sub 4x Space Margin
+        div
+          div.margin
+            p(class='+u-mt-4')
+              span Margin Top 4 ↑
+        div
+          div.margin
+            p(class='+u-mr-4  +u-text-right')
+              span Margin Right x 4 →
+        div
+          div.margin
+            p(class='+u-mb-4')
+              span Margin Bottom x 4 ↓
+        div
+          div.margin
+            p(class='+u-ml-4')
+              span ← Margin Left x 4
+        h2.styleguide-title--sub 4x Space Padding
+        div
+          div
+            div.padding(class='+u-pt-4')
+              p
+                span Padding Top 4 ↑
+        div
+          div
+            div.padding(class='+u-pr-4')
+              p(class='+u-text-right')
+                span Padding Right x 4 →
+        div
+          div
+            div.padding(class='+u-pb-4')
+              p
+                span Padding Bottom x 4 ↓
+        div
+          div
+            div.padding(class='+u-pl-4')
+              p
+                span ← Padding Left x 4
+        h2.styleguide-title--sub 3x Space Margin
+        div
+          div.margin
+            p(class='+u-mt-3')
+              span Margin Top 3 ↑
+        div
+          div.margin
+            p(class='+u-mr-3  +u-text-right')
+              span Margin Right x 3 →
+        div
+          div.margin
+            p(class='+u-mb-3')
+              span Margin Bottom x 3 ↓
+        div
+          div.margin
+            p(class='+u-ml-3')
+              span ← Margin Left x 3
+        h2.styleguide-title--sub 3x Space Padding
+        div
+          div
+            div.padding(class='+u-pt-3')
+              p
+                span Padding Top 3 ↑
+        div
+          div
+            div.padding(class='+u-pr-3')
+              p(class='+u-text-right')
+                span Padding Right x 3 →
+        div
+          div
+            div.padding(class='+u-pb-3')
+              p
+                span Padding Bottom x 3 ↓
+        div
+          div
+            div.padding(class='+u-pl-3')
+              p
+                span ← Padding Left x 3
+        h2.styleguide-title--sub 2x Space Margin
+        div
+          div.margin
+            p(class='+u-mt-2')
+              span Margin Top 2 ↑
+        div
+          div.margin
+            p(class='+u-mr-2  +u-text-right')
+              span Margin Right x 2 →
+        div
+          div.margin
+            p(class='+u-mb-2')
+              span Margin Bottom x 2 ↓
+        div
+          div.margin
+            p(class='+u-ml-2')
+              span ← Margin Left x 2
+        h2.styleguide-title--sub 2x Space Padding
+        div
+          div
+            div.padding(class='+u-pt-2')
+              p
+                span Padding Top 2 ↑
+        div
+          div
+            div.padding(class='+u-pr-2')
+              p(class='+u-text-right')
+                span Padding Right x 2 →
+        div
+          div
+            div.padding(class='+u-pb-2')
+              p
+                span Padding Bottom x 2 ↓
+        div
+          div
+            div.padding(class='+u-pl-2')
+              p
+                span ← Padding Left x 2
+        h2.styleguide-title--sub Space Margin
+        div
+          div.margin
+            p(class='+u-mt')
+              span Margin Top Space ↑
+        div
+          div.margin
+            p(class='+u-mr  +u-text-right')
+              span Margin Right Space →
+        div
+          div.margin
+            p(class='+u-mb')
+              span Margin Bottom Space ↓
+        div
+          div.margin
+            p(class='+u-ml')
+              span ← Margin Left Space
+        h2.styleguide-title--sub Space Padding
+        div
+          div
+            div.padding(class='+u-pt')
+              p
+                span Margin Top Space ↑
+        div
+          div
+            div.padding(class='+u-pr')
+              p(class='+u-text-right')
+                span Margin Right Space →
+        div
+          div
+            div.padding(class='+u-pb')
+              p
+                span Margin Bottom Space ↓
+        div
+          div
+            div.padding(class='+u-pl')
+              p
+                span ← Margin Left Space
+        h2.styleguide-title--sub 1/2 Space Margin
+        div
+          div.margin
+            p(class='+u-mt-half')
+              span Margin Top 1/2 Space ↑
+        div
+          div.margin
+            p(class='+u-mr-half  +u-text-right')
+              span Margin Right 1/2 Space →
+        div
+          div.margin
+            p(class='+u-mb-half')
+              span Margin Bottom 1/2 Space ↓
+        div
+          div.margin
+            p(class='+u-ml-half')
+              span ← Margin Left 1/2 Space
+         h2.styleguide-title--sub 1/2 Space Padding
+        div
+          div
+            div.padding(class='+u-pt-half')
+              p
+                span Padding Top 1/2 Space ↑
+        div
+          div
+            div.padding(class='+u-pr-half')
+              p(class='+u-text-right')
+                span Padding Right 1/2 Space →
+        div
+          div
+            div.padding(class='+u-pb-half')
+              p
+                span Padding Bottom 1/2 Space ↓
+        div
+          div
+            div.padding(class='+u-pl-half')
+              p
+                span ← Padding Left 1/2 Space
+        h2.styleguide-title--sub 1/3 Space Margin
+        div
+          div.margin
+            p(class='+u-mt-third')
+              span Margin Top 1/3 Space ↑
+        div
+          div.margin
+            p(class='+u-mr-third  +u-text-right')
+              span Margin Right 1/3 Space →
+        div
+          div.margin
+            p(class='+u-mb-third')
+              span Margin Bottom 1/3 Space ↓
+        div
+          div.margin
+            p(class='+u-ml-third')
+              span ← Margin Left 1/3 Space
+        h2.styleguide-title--sub 1/3 Space Padding
+        div
+          div
+            div.padding(class='+u-pt-third')
+              p
+                span Padding Top 1/3 Space ↑
+        div
+          div
+            div.padding(class='+u-pr-third')
+              p(class='+u-text-right')
+                span Padding Right 1/3 Space →
+        div
+          div
+            div.padding(class='+u-pb-third')
+              p
+                span Padding Bottom 1/3 Space ↓
+        div
+          div
+            div.padding(class='+u-pl-third')
+              p
+                span ← Padding Left 1/3 Space
+        h2.styleguide-title--sub 1/4 Space Margin
+        div
+          div.margin
+            p(class='+u-mt-quarter')
+              span Margin 1/4 Space ↑
+        div
+          div.margin
+            p(class='+u-mr-quarter  +u-text-righter')
+              span Margin Right 1/4 Space →
+        div
+          div.margin
+            p(class='+u-mb-quarter')
+              span Margin Bottom 1/4 Space ↓
+        div
+          div.margin
+            p(class='+u-ml-quart')
+              span ← Margin Left 1/4 Space
+        h2.styleguide-title--sub 1/4 Space Padding
+        div
+          div
+            div.padding(class='+u-pt-quarter')
+              p
+                span Padding Top Space 1/4
+        div
+          div
+            div.padding(class='+u-pr-quarter')
+              p(class='+u-text-right')
+                span Padding Left Space 1/4 →
+        div
+          div
+            div.padding(class='+u-pb-quarter')
+              p
+                span Padding Bottom Space 1/4 ↓
+        div
+          div
+            div.padding
+              p(class='+u-pl-quarter')
+                span ← Padding Right Space 1/4
+        h2.styleguide-title--sub 1/5 Space Margin
+        div
+          div.margin
+            p(class='+u-mt-fifth')
+              span Margin Top Space 1/5
+        div
+          div.margin
+            p(class='+u-mr-fifth  +u-text-right')
+              span Margin Space 1/5
+        div
+          div.margin
+            p(class='+u-mb-fifth')
+              span Margin Left Bottom Space 1/5
+        div
+          div.margin
+            p(class='+u-ml-fifth')
+              span ← Margin Left Space 1/5
+        h2.styleguide-title--sub 1/5 Space Padding
+        div
+          div
+            div.padding(class='+u-pt-fifth')
+              p
+                span Padding Top Space 1/5
+        div
+          div
+            div.padding(class='+u-pr-fifth')
+              p(class='+u-text-right')
+                span Padding Left Space 1/5  →
+        div
+          div
+            div.padding(class='+u-pb-fifth')
+              p
+                span Padding Bottom Space 1/5 ↓
+        div
+          div
+            div.padding(class='+u-pl-fifth')
+              p
+                span ← Padding Right Space 1/5
+        h2.styleguide-title--sub 1/6 Space Margin
+        div
+          div.margin
+            p(class='+u-mt-sixth')
+              span Margin Top Space 1/6
+        div
+          div.margin
+            p(class='+u-mr-sixth  +u-text-right')
+              span Margin Left Space 1/6  →
+        div
+          div.margin
+            p(class='+u-mb-sixth')
+              span Margin Bottom Space 1/6 ↓
+        div
+          div.margin
+            p(class='+u-ml-sixth')
+              span ← Margin Right Space 1/6
+        h2.styleguide-title--sub 1/6 Space Padding
+        div
+          div
+            div.padding(class='+u-pt-sixth')
+              p
+                span Padding Top Space 1/6
+        div
+          div
+            div.padding(class='+u-pr-sixth')
+              p(class='+u-text-right')
+                span Padding Left Space 1/6  →
+        div
+          div
+            div.padding(class='+u-pb-sixth')
+              p
+                span Padding Bottom Space 1/6 ↓
+        div
+          div
+            div.padding(class='+u-pl-sixth')
+              p
+                span ← Padding Right Space 1/6
+      h3 Space Padding Box
+      div.styleguide-utilites.box
+        div
+          div
+            div.padding(class='+u-p-sixth-box')
+              p
+                span Padding Space 1/6
+        div
+          div
+            div.padding(class='+u-p-fifth-box')
+              p
+                span Padding Space 1/5
+        div
+          div
+            div.padding(class='+u-p-quarter-box')
+              p
+                span Padding Space 1/4
+        div
+          div
+            div.padding(class='+u-p-third-box')
+              p
+                span Padding Space 1/3
+        div
+          div
+            div.padding(class='+u-p-half-box')
+              p
+                span Padding Space 1/2
+        div
+          div
+            div.padding(class='+u-p-box')
+              p
+                span Padding Space 1
+        div
+          div
+            div.padding(class='+u-p-1-half-box')
+              p
+                span Padding Space 1 half
+        div
+          div
+            div.padding(class='+u-p-2-box')
+              p
+                span Padding Space 2
+        div
+          div
+            div.padding(class='+u-p-3-box')
+              p
+                span Padding Space 3
+        div
+          div
+            div.padding(class='+u-p-4-box')
+              p
+                span Padding Space 4
+        div
+          div
+            div.padding(class='+u-p-5-box')
+              p
+                span Padding Space 5
+        div
+          div
+            div.padding(class='+u-p-6-box')
+              p
+                span Padding Space 6
+      h3 Space Margin Box
+      div.styleguide-utilites.box
+        div
+          div.margin
+            p(class='+u-m-sixth-box')
+              span margin Space 1/6
+        div
+          div.margin
+            p(class='+u-m-fifth-box')
+              span margin Space 1/5
+        div
+          div.margin
+            p(class='+u-m-quarter-box')
+              span margin Space 1/4
+        div
+          div.margin
+            p(class='+u-m-third-box')
+              span margin Space 1/3
+        div
+          div.margin
+            p(class='+u-m-half-box')
+              span margin Space 1/2
+        div
+          div.margin
+            p(class='+u-m-box')
+              span margin Space 1
+        div
+          div.margin
+            p(class='+u-m-1-half-box')
+              span margin Space 1 half
+        div
+          div.margin
+            p(class='+u-m-2-box')
+              span margin Space 2
+        div
+          div.margin
+            p(class='+u-m-3-box')
+              span margin Space 3
+        div
+          div.margin
+            p(class='+u-m-4-box')
+              span margin Space 4
+        div
+          div.margin
+            p(class='+u-m-5-box')
+              span margin Space 5
+        div
+          div.margin
+            p(class='+u-m-6-box')
+              span margin Space 6
+      h1 Text Utility Transform Classes
+      div.styleguide-utilites.typography
+        p(class='+u-text-lowercase' style='font-family: source-sans-pro') Lorem ipsum dolor sit amet.
+        p(class='+u-text-uppercase') Lorem ipsum dolor sit amet.
+        p(class='+u-text-capitalize') Lorem ipsum dolor sit amet.
+      h1 Text Alignment
+      div.styleguide-utilites.text-alignment
+        p(class='+u-text-left')
+          span Left:
+          | As most young candidates for the pains and penalties of whaling stop at this same New Bedford, thence to embark on their voyage, it may as well be related that I, for one, had no idea of so doing. For my mind was made up to sail in no other than a Nantucket craft, because there was a fine, boisterous something about everything connected with that famous old island, which amazingly pleased me. Besides though New Bedford has of late been gradually monopolizing the business of whaling, and though in this matter poor old Nantucket is now much behind her, yet Nantucket was her great original- the Tyre of this Carthage;- the place where the first dead American whale was stranded.
+        p(class='+u-text-right')
+          span Right:
+          | Where else but from Nantucket did those aboriginal whalemen, the Red-Men, first sally out in canoes to give chase to the Leviathan? And where but from Nantucket, too, did that first adventurous little sloop put forth, partly laden with imported cobblestones- so goes the story- to throw at the whales, in order to discover when they were nigh enough to risk a harpoon from the bowsprit?
+        p(class='+u-text-center')
+          span Center:
+          | Now having a night, a day, and still another night following before me in New Bedford, ere could embark for my destined port, it became a matter of concernment where I was to eat and sleep meanwhile. It was a very dubious-looking, nay, a very dark and dismal night, bitingly cold and cheerless. I knew no one in the place. With anxious grapnels I had sounded my pocket, and only brought up a few pieces of silver
+        p(class='+u-text-justify')
+          span Justify:
+          | So, wherever you go, Ishmael, said I to myself, as I stood in the middle of a dreary street shouldering my bag, and comparing the towards the north with the darkness towards the south- wherever in your wisdom you may conclude to lodge for the night, my dear Ishmael, be sure to inquire the price, and don't be too particular.
+
+      h1 Heading Sizes
+      div.styleguide-utilites.typography
+        h1(class='+u-font-massive') font-size: $f-massive
+        h1(class='+u-font-huge') font-size: $f-huge
+        h1(class='+u-font-large') font-size: $f-large
+      h1 H1 - h6 Sizes
+      div.styleguide-utilites.typography
+        h1(class='+u-h1') font-size: $f-h1
+        h1(class='+u-h2') font-size: $f-h2
+        h1(class='+u-h3') font-size: $f-h3
+        h1(class='+u-h4') font-size: $f-h4
+        h1(class='+u-h5') font-size: $f-h5
+        h1(class='+u-h6') font-size: $f-h6
+      h1 Copy Sizes
+      div.styleguide-utilites.typography
+        p(class='+u-font-base') font-size: $f-base
+        p(class='+u-font-lead') font-size: $f-lead
+        p(class='+u-font-half') font-size: $f-half
+      h1 Small Copy Type
+      div.styleguide-utilites.typography
+        p(class='+u-font-small') font-size: $f-small
+        p(class='+u-font-tiny') font-size: $f-tiny
+        p(class='+u-font-micro') font-size: $f-micro
+      h1 Font Weights
+      div.styleguide-utilites.typography
+        p(class='+u-font-100') font-weight: 100
+        p(class='+u-font-200') font-weight: 200
+        p(class='+u-font-300') font-weight: 300
+        p(class='+u-font-400') font-weight: 400
+        p(class='+u-font-500') font-weight: 500
+        p(class='+u-font-600') font-weight: 600
+        p(class='+u-font-700') font-weight: 700
+        p(class='+u-font-800') font-weight: 800
+        p(class='+u-font-900') font-weight: 900
+      h1 Font Styles
+      div.styleguide-base.fonts
+        p(class='+u-font-normal') font-style: normal
+        p(class='+u-font-italic') font-style: italic
+        p(class='+u-font-oblique') font-style: oblique
+      h1 source-Sans-Pro Webfont
+      div.styleguide-base.fonts
+        h2(class='+u-font-200'  style='font-family: source-sans-pro') ExtraLight
+        p(class='+u-font-huge  +u-font-200'  style='font-family: source-sans-pro')
+          | Parciais fy jac codi baw hud
+
+          | llawn dŵr ger tŷ Mabon.
+
+          // Welsh
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | Ξεσκεπάζω την ψυχοφθόρα βδελυγμία.
+
+          | ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+
+          | αβγδεζηθικλμνξοπρσςτυφχψω
+
+          | У рудога вераб’я ў сховішчы пад
+
+          | фатэлем ляжаць нейкія гаючыя зёлкі.
+
+          // Byelarussian
+          | абвгґдђѓеёєжнњопрс
+          // с́
+
+          | тћќуўuфхцчџшщъыьэюя
+
+          | АБВГҐДЂЃЕЁЄЖНЊОПРС
+          // С́
+
+          | ТЋЌУЎUФХЦЧЏШЩЪЫЬЭЮЯ
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺₽ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-200  +u-font-italic'  style='font-family: source-sans-pro') ExtraLight Italic
+        p(class='+u-font-huge  +u-font-200  +u-font-italic'  style='font-family: source-sans-pro')
+          | Muļķa hipiji mēģina brīvi
+
+          | nogaršot celofāna žņaudzējčūsku.
+
+          // Latvian
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-300'  style='font-family: source-sans-pro') Light
+        p(class='+u-font-huge  +u-font-300'  style='font-family: source-sans-pro')
+          | Þú dazt á hnéð í vök og yfir
+
+          | blóm sexý pæju.
+
+          // Icelandic
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | Ταχίστη αλώπηξ βαφής ψημένη γη,
+
+          | δρασκελίζει υπέρ νωθρού κυνός.
+
+          | ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+
+          | αβγδεζηθικλμνξοπρσςτυφχψω
+
+          span(lang='sr')
+            | Љубазни фењерџија чађавог
+
+            | лица хоће да ми покаже штос.
+
+          // Serbian
+          | абвгґдђѓеёєжнњопрс
+          // с́
+
+          | тћќуўuфхцчџшщъыьэюя
+
+          | АБВГҐДЂЃЕЁЄЖНЊОПРС
+          // С́
+
+          | ТЋЌУЎUФХЦЧЏШЩЪЫЬЭЮЯ
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺₽ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-300  +u-font-italic'  style='font-family: source-sans-pro') Light Italic
+        p(class='+u-font-huge  +u-font-300  +u-font-italic'  style='font-family: source-sans-pro')
+          | Loď čeří kýlem tůň obzvlášť
+
+          | v Grónské úžině.
+
+          // Czech
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-400'  style='font-family: source-sans-pro') Regular
+        p(class='+u-font-huge  +u-font-400'  style='font-family: source-sans-pro')
+          | Viewing quizzical abstracts
+
+          | mixed up hefty jocks.
+
+          // English
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | Ζαφείρι δέξου πάγκαλο,
+
+          | βαθῶν ψυχῆς τὸ σῆμα.
+
+          | ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+
+          | αβγδεζηθικλμνξοπρσςτυφχψω
+
+          | Съешь же ещё этих мягких
+
+          | французских булок, да выпей чаю.
+
+          // Russian
+          | абвгґдђѓеёєжнњопрс
+          // с́
+
+          | тћќуўuфхцчџшщъыьэюя
+
+          | АБВГҐДЂЃЕЁЄЖНЊОПРС
+          // С́
+
+          | ТЋЌУЎUФХЦЧЏШЩЪЫЬЭЮЯ
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺₽ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-500  +u-font-italic'  style='font-family: source-sans-pro') Italic
+        p(class='+u-font-huge  +u-font-500  +u-font-italic'  style='font-family: source-sans-pro')
+          | Voix ambiguë d’un cœur qui au
+
+          | zéphyr préfère les jattes de kiwi.
+
+          // French
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-600'  style='font-family: source-sans-pro') SemiBold
+        p(class='+u-font-huge  +u-font-600'  style='font-family: source-sans-pro')
+          | Victor jagt zwölf Boxkämpfer
+
+          | quer über den großen Sylter Deich.
+
+          // German
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | Διαφυλάξτε γενικά τη ζωή σας
+
+          | από βαθειά ψυχικά τραύματα.
+
+          | ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+
+          | αβγδεζηθικλμνξοπρσςτυφχψω
+
+          | Гномът Доцьо приключи спящ
+
+          | в шейна за жаби.
+
+          // Bulgarian
+          | абвгґдђѓеёєжнњопрс
+          // с́
+
+          | тћќуўuфхцчџшщъыьэюя
+
+          | АБВГҐДЂЃЕЁЄЖНЊОПРС
+          // С́
+
+          | ТЋЌУЎUФХЦЧЏШЩЪЫЬЭЮЯ
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺₽ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-600  +u-font-italic'  style='font-family: source-sans-pro') Semibold Italic
+        p(class='+u-font-huge  +u-font-600  +u-font-italic'  style='font-family: source-sans-pro')
+          | Jovencillo emponzoñado de
+
+          | whisky: ¡qué figurota exhibe!
+
+          // Spanish
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-700'  style='font-family: source-sans-pro') Bold
+        p(class='+u-font-huge  +u-font-700'  style='font-family: source-sans-pro')
+          | Flygande bäckasiner söka
+
+          | hwila på mjuka tuvor.
+
+          // Swedish
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | Αβρός δ’εν προχοαίς κύκλωψ
+
+          | φθογγάζετο μύρμηξ.
+
+          | ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+
+          | αβγδεζηθικλμνξοπρσςτυφχψω
+
+          | Чуєш їх, доцю, га? Кумедна ж ти,
+
+          | прощайся без ґольфів!
+
+          // Ukrainian
+          | абвгґдђѓеёєжнњопрс
+          // с́
+
+          | тћќуўuфхцчџшщъыьэюя
+
+          | АБВГҐДЂЃЕЁЄЖНЊОПРС
+          // С́
+
+          | ТЋЌУЎUФХЦЧЏШЩЪЫЬЭЮЯ
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺₽ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-700  +u-font-italic'  style='font-family: source-sans-pro') Bold Italic
+        p(class='+u-font-huge  +u-font-700  +u-font-italic'  style='font-family: source-sans-pro')
+          | Fahiş bluz güvencesi yağdırma
+
+          | projesi çöktü.
+
+          // Turkish
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-900'  style='font-family: source-sans-pro') Black
+        p(class='+u-font-huge  +u-font-900'  style='font-family: source-sans-pro')
+          | Jeżu klątw, spłódź Finom
+
+          | część gry hańb!
+
+          // Polish
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | Γαζίες και μυρτιές δεν θα βρω
+
+          | πια στο χρυσαφί ξέφωτο.
+
+          | ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+
+          | αβγδεζηθικλμνξοπρσςτυφχψω
+
+          | Щётканы фермд пийшин цувъя.
+
+          | Бөгж зогсч хэльюү.
+
+          // Mongolian
+          | абвгґдђѓеёєжнњопрс
+          // с́
+
+          | тћќуўuфхцчџшщъыьэюя
+
+          | АБВГҐДЂЃЕЁЄЖНЊОПРС
+          // С́
+
+          | ТЋЌУЎUФХЦЧЏШЩЪЫЬЭЮЯ
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺₽ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ ♪
+        hr
+        h2(class='+u-font-900  +u-font-italic'  style='font-family: source-sans-pro') Black Italic
+        p(class='+u-font-huge  +u-font-900  +u-font-italic'  style='font-family: source-sans-pro')
+          | In quel campo si trovan funghi
+
+          | in abbondanza.
+
+          // Italian
+          | abcdefghijklmnopqrstuvwxyz
+
+          | ABCDEFGHIJKLMNOPQRSTU
+
+          | VWXYZ & 1234567890 .,:;… ¡!¿?
+
+          | '" ‘’ “” ‚„′″‹› «» ()[]{}/|\ * †‡ § @ ¶
+
+          | $£¥€¢ƒ₹₺ %‰ ¼½¾⅓⅔⅛⅜⅝
+
+          | +−×÷∙=<>≤≥±^≠~≈¬ #π∞µ∂∫√
+
+          | ←
+          // ↖
+          | ↑
+          // ↗
+          | →
+          // ↘
+          | ↓
+          // ↙
+          | ▲▶▼◀△▷▽◁ ☑✓ </code></pre>

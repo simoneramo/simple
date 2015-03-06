@@ -1,0 +1,26 @@
+/* ==========================================================================
+  Config - Media Queries
+
+  Default BREAKPOINT variables for reference:
+
+  $breakpoint-default-feature:    'min-width'     !default;
+  $breakpoint-default-media:      'all'           !default;
+  $breakpoint-force-media-all:    false           !default;
+  $breakpoint-default-pair:       'width'         !default;
+  $breakpoint-to-ems:             false           !default;
+  $breakpoint-prefixes:           'webkit' 'moz'  !default;
+  $breakpoint-prefixed-queries:   'device-pixel-ratio'
+                                  'min-device-pixel-ratio'
+                                  'max-device-pixel-ratio' !default;
+  $breakpoint-no-queries:         false           !default;
+  $breakpoint-no-query-wrappers:  false           !default;
+
+  ==========================================================================*/
+
+  $breakpoint-to-ems: true;
+
+  // https://gist.github.com/ethanmuller/7006656
+
+  $bp-medium:       620px !default;
+  $bp-large:        800px !default;
+  $bp-huge:         1600px !default;

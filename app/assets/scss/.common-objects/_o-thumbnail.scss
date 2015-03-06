@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Common Objects - Thumbnail
+
+   Copy and use in site
+   ========================================================================== */
+
+  // object
+  .o-thumb {
+    // element
+    &__item{
+      display: block;
+      padding: $space-halve;
+      border: 1px solid $c-object;
+    }
+  }

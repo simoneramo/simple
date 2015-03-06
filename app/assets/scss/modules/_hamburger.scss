@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Common Object - Hamburger
+   ========================================================================== */
+
+  .m-burger {
+    position: relative;
+    padding: 0;
+    width: 39px;
+    height: 36px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    &:before, &:after {
+      background: $c-object;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      content: '';
+      transition: all .15s ease-in-out;
+      width: 35px;
+      height: 4px;
+      opacity: 1;
+    }
+    &:before {
+      transform: rotate(45deg) scale(0);
+    }
+    &:after {
+      transform: rotate(-45deg) scale(0);
+    }
+    i {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      transition: all .15s ease-in-out;
+      background: $c-object;
+      width: 35px;
+      height: 4px;
+      box-shadow: 0 -12px $c-object, 0 12px $c-object;
+    }
+  }
+
+    // open burger
+    .m-burger--opened {
+      i {
+        background: transparent;
+        box-shadow: 0 -12px transparent, 0 12px transparent;
+        opacity: 0;
+        transform: scale(0);
+      }
+      &:before, &:after {
+        opacity: 1;
+      }
+      &:before {
+        transform: rotate(45deg) scale(1);
+      }
+      &:after {
+        transform: rotate(-45deg) scale(1);
+      }
+    }

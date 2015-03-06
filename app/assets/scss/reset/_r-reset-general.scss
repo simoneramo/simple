@@ -1,0 +1,21 @@
+$use-reset-general:  true !default;
+
+@if $use-reset-general == true{
+/* ==========================================================================
+   Reset - General
+
+   // use with base styles
+
+   ========================================================================== */
+
+  body,
+  h1, h2, h3, h4, h5, h6,
+  p, blockquote, pre,
+  form, fieldset, legend,
+  table, th, td, caption,
+  hr, figure {
+    margin:  0;
+    padding: 0;
+  }
+
+}//end if

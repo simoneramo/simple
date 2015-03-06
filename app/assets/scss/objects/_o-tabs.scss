@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Common Objects - Tabs
+   ========================================================================== */
+
+  .o-tabs {
+    @include clearfix;
+    @include list-unstyled;
+
+    > li {
+      display: inline-block;
+      margin: 0 $space-fifth;
+    }
+  }
+
+  .o-tabs--right {
+    text-align: right;
+  }
+
+  .o-tabs--centered {
+    text-align: center;
+  }

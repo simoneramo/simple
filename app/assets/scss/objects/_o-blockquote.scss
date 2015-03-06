@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Common Objects - Blockquotes
+   ========================================================================== */
+
+  .o-blockquote {
+    padding:$space-2;
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+
+    .o-blockquote__source {
+      font-weight: bold;
+      margin-top: $space;
+      display:block;
+      font-style: normal;
+      &:before{
+        content:"";
+      }
+    }
+
+
+  .o-blockquote--right {
+    .o-blockquote--right__source {
+      text-align: right;
+      &:after{
+        content:"";
+      }
+    }
+  }

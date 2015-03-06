@@ -1,0 +1,24 @@
+  /* ==========================================================================
+   Object - Stats
+   ========================================================================== */
+
+  // stat wrapper
+  .o-stat-group{
+    @include clearfix;
+  }
+
+    // stat
+    .o-stat {
+      display: flex;
+      flex-direction: column;
+      float: left;
+    }
+
+      .o-stat__title {
+        order: 1;
+      }
+
+      .o-stat__value {
+        margin-left: 0;
+        order: 2;
+      }

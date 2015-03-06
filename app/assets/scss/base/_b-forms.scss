@@ -1,0 +1,76 @@
+$use-base-forms:  true !default;
+
+@if $use-base-forms == true{
+
+/* ==========================================================================
+   Base - Forms
+   ========================================================================== */
+  // fieldset reset, define consistent border, margin, and padding
+  fieldset {
+    border: 0;
+    padding: 0;   // overright normalize
+    margin: 0;    // overright normalize
+    min-width:0;  // make width responsive minius min-width: -webkit-min-content
+  }
+
+  // make bold
+  legend{
+    font-weight:bold;
+  }
+
+  // give some more interactivity
+  label,
+  input,
+  textarea,
+  button,
+  select,
+  option{
+    cursor:pointer;
+  }
+
+  // web kit
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"] {
+   -webkit-appearance: none;
+   -webkit-appearance: textfield;
+   -webkit-border-radius: 0;
+  }
+
+  // use border-box
+  @if $use-base-border-box == true{
+    input[type="search"] {
+      box-sizing:border-box;
+    }
+  }
+
+  input[type="submit"]{
+    -webkit-border-radius: 0;
+  }
+
+  button{
+    line-height: normal;
+  }
+
+  textarea {
+    overflow: auto;
+    vertical-align: top;
+  }
+
+  textarea:active, textarea:focus{
+    cursor:text;
+  }
+
+}//end if

@@ -1,0 +1,12 @@
+$use-utilities-floats:  true !default;
+
+@if $use-utilities-floats == true{
+/* ==========================================================================
+   Utilities - Float
+   ========================================================================== */
+
+  .u-f-left    { float: left; }
+  .u-f-right   { float: right; }
+  .u-f-inherit { float: inherit; }
+
+}// end if

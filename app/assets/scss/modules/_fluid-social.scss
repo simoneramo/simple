@@ -1,0 +1,32 @@
+$use-modules-fluid-social:	true !default;
+
+@if $use-modules-fluid-social == true{
+/* ==========================================================================
+   Modules CSS Social Gallery - 1.0
+
+  example: add background-color from colors
+
+  .m-social-gallery__item{
+    &.wordpress a {   background-color: $c-wordpress; }
+  }
+
+   ========================================================================== */
+
+	.m-fluid-social{
+		&__item{
+			width: 12.5%;  // change to suit in you site styles
+			vertical-align: bottom;
+			a{
+				display: block;
+				padding: 25%;  // change to suit in you site styles
+				img {
+					width: 100%;
+					height: 100%;
+					max-width: 100%;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+}// end if

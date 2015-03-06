@@ -1,0 +1,86 @@
+$use-objects-buttons: true !default;
+
+@if $use-objects-buttons == true{
+/* ==========================================================================
+   Object - Buttons
+   ========================================================================== */
+
+  // object
+  @include object(o-btn) {
+    display:inline-block;
+    margin:0;
+    padding: 0 $space;
+    border:none;
+    background: $c-object;
+    vertical-align:middle;
+    white-space:nowrap;
+    font-size:100%;
+    font-family:inherit;
+    line-height: 2.4;
+    cursor: pointer;
+
+    // modifier
+    @include modifier(small) {
+      padding-right: $space-halve;
+      padding-left: $space-halve;
+      line-height: 1.8;
+    }
+
+    // modifier
+    @include modifier(large) {
+      padding-right: $space-1-halve;
+      padding-left: $space-1-halve;
+      line-height: 3.4;
+    }
+
+    // modifier
+    @include modifier(huge) {
+      padding-right: $space-2;
+      padding-left: $space-2;
+      line-height:4.4;
+    }
+
+    // modifier
+    @include modifier(full) {
+      padding-right:0;
+      padding-left: 0;
+      width:100%;
+      text-align:center;
+    }
+
+    // modifier
+    @include modifier(natural) {
+      padding-right: $space-1-halve;
+      padding-left: $space-1-halve;
+      vertical-align:baseline;
+      font-size:inherit;
+      line-height:inherit;
+    }
+
+    // modifier
+    @include modifier(positive)   { @extend %e-bc-success; }
+    @include modifier(negative)   { @extend %e-bc-error; }
+
+    @include modifier(pill)       { border-radius: 200px; }
+    @include modifier(rounded)    { border-radius: $button-round; }
+
+    @include modifier(circle) { 
+      border-radius: 100%;
+      height: $space-8;
+      width: $space-8;
+      line-height: $space-8;
+      text-align: center;
+      padding: 0;
+    }
+
+    @include modifier(success)    { @extend %e-bc-success; }
+    @include modifier(info)       { @extend %e-bc-info; }
+    @include modifier(warning)    { @extend %e-bc-warning; }
+    @include modifier(danger)     { @extend %e-bc-danger; }
+    @include modifier(error)      { @extend %e-bc-error; }
+
+    @include modifier(disable)    { @extend %e-s-disable; }
+    @include modifier(inactive)   { @extend %e-s-disable; }
+  }
+
+}//endif

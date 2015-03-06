@@ -1,0 +1,8 @@
+.DS_Store
+.sass-cache
+.temp
+components-bower
+node_modules
+_public/
+app/assets/scss/objects/log.md
+npm-debug.log

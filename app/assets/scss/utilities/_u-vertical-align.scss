@@ -1,0 +1,19 @@
+$use-utilities-vertical-align:  true !default;
+
+@if $use-utilities-vertical-align == true{
+
+/* ==========================================================================
+   Utilities - Vertical Align
+   ========================================================================== */
+
+  .u-vert-middle  { vertical-align: middle; }
+  .u-vert-top     { vertical-align: top; }
+  .u-vert-bottom  { vertical-align: bottom; }
+  .u-vert-inherit { vertical-align: inherit; }
+
+  .u-va-middle    { vertical-align: middle; }
+  .u-va-top       { vertical-align: top; }
+  .u-va-bottom    { vertical-align: bottom; }
+  .u-va-inherit   { vertical-align: inherit; }
+
+}//endif

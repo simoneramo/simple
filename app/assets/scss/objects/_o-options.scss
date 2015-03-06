@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Object - Options
+   ========================================================================== */
+
+  // object
+  .o-options {
+    @include list-unstyled;
+
+    > li{
+
+      &, > a{
+        display: inline-block;
+      }
+
+      a{
+        border: 0 solid $c-object;
+        border-width: 1px;
+        border-left-width: 0;
+        padding: $space;
+      }
+
+      &:first-child > a {
+        border-left-width:1px;
+      }
+    }
+
+    // modifier extend - nav
+     .o-options--fit {
+      @extend .o-nav;
+      @extend .o-nav--fit;
+    }
+
+  }

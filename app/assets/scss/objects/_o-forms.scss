@@ -1,0 +1,106 @@
+$use-objects-forms:	true !default;
+
+@if $use-objects-forms == true{
+/* ==========================================================================
+   Object - Forms
+   ========================================================================== */
+
+  // object
+  .o-form {
+
+    legend{
+      display: block;
+      margin-bottom: $space;
+    }
+
+    ul{
+      @include list-unstyled;
+      @include clearfix;
+
+      li{
+        margin-bottom: $space;
+
+        textarea,
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="search"],
+        input[type="number"],
+        input[type="url"],
+        input[type="date"],
+        input[type="datetime"],
+        input[type="datetime-local"],
+        input[type="time"],
+        input[type="week"] {
+          border: 1px solid $c-form-input;
+          padding: $space-halve;
+        }
+
+        input[type="color"], select{
+           border: 1px solid $c-form-input;
+        }
+
+        &.o-form__g-fw{
+          width: 100%!important;
+        }
+
+      }
+
+       // forms grid using susy for quick classess
+      &.o-form__g-2 li{
+        @include gallery(6 of 12);
+      }
+
+      &.o-form__g-3 li{
+        @include gallery(4 of 12);
+      }
+
+      &.o-form__g-4 li{
+        @include gallery(3 of 12);
+      }
+
+      &.o-form__g-5 li{
+        @include gallery(2 of 10);
+      }
+
+    }
+
+
+    //.o-form__
+
+    // inputs 100%
+    .o-form__input-fw {
+      @extend %e-w-1\/1;
+    }
+
+    // label block
+    .o-form__label-block {
+      @extend %e-d-block;
+    }
+
+    // label inline
+    .o-form__label-inline {
+      @extend %e-d-inline;
+    }
+
+  	// inputs text file
+  	.o-form__input-file {
+  		margin-bottom:$space;
+  	}
+
+  	// help box - under inputs selects ect.
+  	.o-form__box-help {
+  		margin-top: $space-halve;
+  		@extend %e-d-block;
+  	}
+
+  	// text box ontop of form for information
+  	.box-text {
+  		@extend .o-alert;
+  		margin-bottom:$space;
+  	}
+
+  }
+
+}//endif

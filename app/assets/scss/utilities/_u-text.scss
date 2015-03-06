@@ -1,0 +1,22 @@
+$use-utilities-text:  true !default;
+
+@if $use-utilities-text == true{
+/* ==========================================================================
+   Utilities Text
+   ========================================================================== */
+
+  // text underline
+  .u-td-underline   { text-decoration: underline;}
+
+  // text transforms
+  .u-tt-lower       { text-transform: lowercase;}
+  .u-tt-upper       { text-transform: uppercase;}
+  .u-tt-caps        { text-transform: capitalize;}
+
+  // text align
+  .u-ta-left        { text-align: left;}
+  .u-ta-right       { text-align: right;}
+  .u-ta-center      { text-align: center;}
+  .u-ta-justify     { text-align: justify;}
+
+}//end if

@@ -1,0 +1,229 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    include ../_partials/site/compatibility-mode
+    title Simple - This is Simple
+    include ../_partials/site/description
+    include ../_partials/site/meta-viewport
+
+    include ../_partials/site/favicon
+    //- or
+
+    //- include ../_partials/site/favicon-png
+
+    //-include ../_partials/site/metaquery
+
+    //- include ../_partials/site/icon-chrome-android
+
+    //- include ../_partials/site/icon-safari-ios
+
+    //- include ../_partials/site/icon-tile-win8
+
+    //- include ../_partials/site/if-mobile-url
+
+    link(type='text/css', rel='stylesheet', href='../assets/css/main.css')
+  body.s-simple
+    .l-simple-container.u-ta-center
+      h1.u-fs-h1x.u-ta-center(class='u-s-mb-1/6') Simple Css
+      nav.s-simple-nav
+        ul(class='o-nav  o-nav--banner  u-s-mb-4')
+          li
+            a(class='o-btn' href='base/') base
+          li
+            a(class='o-btn' href='objects/') objects
+          li
+            a(class='o-btn' href='utilities/') utilities
+          li
+            a(class='o-btn' href='sink/') sink
+          li
+            a(class='o-btn' href='modules/') modules
+          li
+            a(class='o-btn' href='config/') config
+          li
+            a(class='o-btn' href='mixins/') mixins
+      h2(class='  u-s-mt-3') Base
+      ul.u-list-unstyled
+        li
+          a(class='' href='base/b-code.html') Code
+        li
+          a(class='' href='base/b-forms.html') Forms
+        li
+          a(class='' href='base/b-links.html') Links
+        li
+          a(class='' href='base/b-lists.html') Lists
+        li
+          a(class='' href='base/b-media.html') Media
+        li
+          a(class='' href='base/b-quotes.html') Quotes
+        li
+          a(class='' href='base/b-text.html') Text
+
+      h2(class='  u-s-mt-3') Utilities
+      ul.u-list-unstyled
+        li
+          a(class='' href='utilities/u-alert.html') Alert
+        li
+          a(class='' href='utilities/u-colours.html') Colours
+        li
+          a(class='' href='utilities/u-display.html') Display
+        li
+          a(class='' href='utilities/u-extends.html') Extends
+        li
+          a(class='' href='utilities/u-floats.html') Floats
+        li
+          a(class='' href='utilities/u-font-styles.html') Font Styles
+        li
+          a(class='' href='utilities/u-font-sizes.html') Font Sizes
+        li
+          a(class='' href='utilities/u-font-weights.html') Font Weights
+        li
+          a(class='' href='utilities/u-position.html') Positioon
+        li
+          a(class='' href='utilities/u-rounded.html') Rounded
+        li
+          a(class='' href='utilities/u-text.html') Text
+        li
+          a(class='' href='utilities/u-spaces.html') Spaces
+        li
+          a(class='' href='utilities/u-states.html') States
+        li
+          a(class='' href='utilities/u-vertical-align.html') Vertical Align
+        li
+          a(class='' href='utilities/u-web-fonts.html') Web Fonts
+        li
+          a(class='' href='utilities/u-widths.html') Widths
+
+      h2(class='  u-s-mt-3') Objects
+      ul.u-list-unstyled
+        li
+          a(class='' href='objects/o-code.html') Code
+        li
+          a(class='' href='objects/o-forms.html') Forms
+        li
+          a(class='' href='objects/o-images.html') Images
+        li
+          a(class='' href='objects/o-rules.html') Rules
+        li
+          a(class='' href='objects/o-tables.html') Tables
+        li
+          a(class='' href='objects/o-island.html') Island
+        li
+          a(class='' href='objects/o-blockquote.html') Blockquote
+        li
+          a(class='' href='objects/o-alert.html') Alert
+        li
+          a(class='' href='objects/o-labels.html') Labels
+        li
+          a(class='' href='objects/o-buttons.html') Buttons
+        li
+          a(class='' href='objects/o-button-groups.html') Button Groups
+        li
+          a(class='' href='objects/o-columns.html') Columns
+        li
+          a(class='' href='objects/o-icon-fonts.html') Icon Fonts
+        li
+          a(class='' href='objects/o-icon-text.html') Icon Text
+        li
+          a(class='' href='objects/o-lists.html') Lists
+        li
+          a(class='' href='objects/o-sprite.html') Sprite
+        li
+          a(class='' href='objects/o-block-list.html') Block List
+        li
+          a(class='' href='objects/o-thumbnail.html') Thumbnail
+        li
+          a(class='' href='objects/o-breadcrumbs.html') Breadcrumbs
+        li
+          a(class='' href='objects/o-flyout.html') Flyout
+        li
+          a(class='' href='objects/o-matrix.html') Matrix
+        li
+          a(class='' href='objects/o-media.html') Media
+        li
+          a(class='' href='objects/o-nav.html') Nav
+        li
+          a(class='' href='objects/o-options.html') Options
+        li
+          a(class='' href='objects/o-pagination.html') Pagination
+        li
+          a(class='' href='objects/o-progress-bars.html') Progress Bars
+        li
+          a(class='' href='objects/o-split.html') Split
+        li
+          a(class='' href='objects/o-loaders.html') Loaders
+        li
+          a(class='' href='objects/o-stats.html') Stats
+        li
+          a(class='' href='objects/o-this-or-this.html') This or This
+        li
+          a(class='' href='objects/o-flag.html') Flag
+
+      h2(class='  u-s-mt-3') Mixins
+      ul.u-list-unstyled
+        li
+          a(class='' href='mixins/m-center-content.html') Center Content
+        li
+          a(class='' href='mixins/m-clearfix.html') Clearfix
+        li
+          a(class='' href='mixins/m-global-mb.html') Global Margin Bottom
+        li
+          a(class='' href='mixins/m-headings.html') Headings
+        li
+          a(class='' href='mixins/m-hidden.html') Hidden
+        li
+          a(class='' href='mixins/m-image-replace.html') Image Replace
+        li
+          a(class='' href='mixins/m-invisible.html') Invisible
+        li
+          a(class='' href='mixins/m-list-unstyled.html') List Unstyled
+        li
+          a(class='' href='mixins/m-reset-mb.html') Reset Margin Bottom
+        li
+          a(class='' href='mixins/m-sizing-vertical-rhythm.html') Sizing Vertical Rhythm
+        li
+          a(class='' href='mixins/m-sr-only.html') Screen Reader Only
+        li
+          a(class='' href='mixins/m-vertical-align-table.html') Vertical Align Table
+        li
+          a(class='' href='mixins/m-vertical-align.html') Vertical Align
+        li
+          a(class='' href='mixins/m-visually-hidden.html') Visually Hidden
+
+      h2(class='  u-s-mt-3') Modules
+      ul.u-list-unstyled
+        li
+          a(class='' href='modules/m-soundcloud.html') sound cloud
+        li
+          a(class='' href='modules/m-rdio.html') rdio
+        li
+          a(class='' href='modules/m-fluid-social.html') fluid-social
+        li
+          a(class='' href='modules/m-owl-carousel.html') owl-carousel
+        li
+          a(class='' href='modules/m-fit-text.html') fit-text
+        li
+          a(class='' href='modules/m-fit-vids.html') fit-vids
+        li
+          a(class='' href='modules/m-fluid-box.html') fluid-box
+        li
+          a(class='' href='modules/m-disqus.html') disqus
+        li
+          a(class='' href='modules/m-highlight.html') highlight
+      h2(class='  u-s-mt-3') Config
+      ul.u-list-unstyled
+        li
+          a(class='' href='config/c-breakpoints.html') Breakpoints
+        li
+          a(class='' href='config/c-colours.html') Colours
+        li
+          a(class='' href='config/c-extends.html') Extends
+        li
+          a(class='' href='config/c-fonts.html') Fonts
+        li
+          a(class='' href='config/c-rounded.html') Rounded
+        li
+          a(class='' href='config/c-spaces.html') Spaces
+
+    include ../_partials/site/scripts
+    include ../_partials/site/analytics

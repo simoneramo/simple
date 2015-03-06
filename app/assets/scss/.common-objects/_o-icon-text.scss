@@ -1,0 +1,39 @@
+$use-objects-icon-text: true !default;
+
+@if $use-objects-icon-text == true{
+/* ==========================================================================
+   Common Object - Icon Text
+
+   // styles needed
+   .icon-add-name {
+     height
+     width
+     background-image
+   }
+
+   ========================================================================== */
+
+  .o-image-text {
+    .o-image-text__icon {
+      background-repeat: no-repeat;
+      position: relative;
+      top: -1px;
+      display: inline-block;
+      overflow: hidden;
+      width: $lh-base#{em};
+      height: $lh-base#{em};
+      vertical-align: middle;
+      line-height: 1;
+      zoom: 1;
+      background-size: 96%;
+      margin-right: $space-quarter;
+    }
+  }
+
+  .o-image-text--rev {
+    @extend .o-image-text;
+    .o-image-text__icon{
+      margin-left: $space-quarter;
+      margin-right: 0;
+    }
+  }

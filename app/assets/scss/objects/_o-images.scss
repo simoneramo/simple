@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Common Object - Images / Figure
+   ========================================================================== */
+
+	.o-image--right {
+		float:right;
+	}
+
+	.o-image--left {
+		float:left;
+	}
+
+	.o-image--center {
+		@include center-content;
+	}
+
+	.o-image--full {
+		width:100%;
+	}
+
+  .o-image--circle {
+   @extend %e-r-circle;
+  }

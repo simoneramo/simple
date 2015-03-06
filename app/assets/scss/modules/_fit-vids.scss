@@ -1,0 +1,14 @@
+$use-modules-fit-vids:	true !default;
+
+@if $use-modules-fit-vids== true{
+/* ==========================================================================
+    Modules - Fit Vids - 1.1 http://fitvidsjs.com
+   ========================================================================== */
+
+	.m-fit-vids{
+    iframe{
+      background-color: $c-black;
+    }
+  }
+
+}//endif

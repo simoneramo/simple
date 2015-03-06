@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Mixin - Block List Space
+
+   * o-block-list_link
+   * o-matrix_link
+
+   Default space set to 1em - $space, if you make
+   o-block-list or o-matrix say 2em - $space-2 then this
+   mixin helps = @include block-link($space-2) or @include block-link(2em);
+
+   @include element(link) {
+    @include block-link($space-2);
+   }
+
+   ========================================================================== */
+
+@mixin link-block-space($link-block-space: $space){
+  display: block;
+  padding: $link-block-space;
+  margin: -$link-block-space;
+}

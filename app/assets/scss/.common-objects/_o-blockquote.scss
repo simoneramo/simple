@@ -1,0 +1,36 @@
+$use-objects-blockquote:	true !default;
+
+@if $use-objects-blockquote == true{
+/* ==========================================================================
+   Common Objects - Blockquotes
+   ========================================================================== */
+
+ .o-blockquote {
+    padding:$space-2;
+    font-style: italic;
+    margin-bottom: 0;
+
+    // modifier
+    @include modifier(right) {
+    	@include element(source) {
+        text-align: right;
+     		&:after{
+      		content:"";
+     		}
+    	}
+    }
+
+    // element
+    @include element(source) {
+    	font-weight: bold;
+      margin-top: $space;
+    	display:block;
+      font-style: normal;
+    	&:before{
+  			content:"";
+   		}
+    }
+
+  }
+
+}//endif

@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Config - Type
+   ========================================================================== */
+
+  // line-height base
+  $lh-base:                  1.45!default;
+
+  // helper sizes
+  $fs-base:                  em(16)!default;
+  $fs-lead:                  $fs-base * 1.125!default;
+  $fs-half:                  $fs-base / 2!default;
+
+  // huge sizes
+  $fs-h1x:                   em(96)!default;
+  $fs-h2x:                   em(84)!default;
+  $fs-h3x:                   em(72)!default;
+  $fs-h4x:                   em(60)!default;
+  $fs-h5x:                   em(46)!default;
+  $fs-h6x:                   em(38)!default;
+
+  // heading sizes
+  $fs-h1:                    em(32)!default;
+  $fs-h2:                    em(26)!default;
+  $fs-h3:                    em(22)!default;
+  $fs-h4:                    em(20)!default;
+  $fs-h5:                    em(18)!default;
+  $fs-h6:                    em(16)!default;
+
+  // small sizes
+  $fs-h7:                    em(14)!default;
+  $fs-h8:                    em(12)!default;
+  $fs-h9:                    em(10)!default;
+  $fs-h10:                   em(8)!default;
+
+  // font stacks
+  $georgia:                  Georgia, Cambria, "Times New Roman", Times, serif;
+  $helvetica:                "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  $lucida-grande:            "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  $monospace:                "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+  $verdana:                  Verdana, Geneva, sans-serif;
+
+  // font stacks base & headings
+  $ff-base:                  $helvetica;
+  $ff-heading-base:          $helvetica;
+
+  // web/fonts 1
+  $ff-family-1:              feather;
+  $ff-folder-1:              feather;
+  $ff-name-1:                feather;
+
+  // web/fonts 2
+  $ff-family-2:              octicons;
+  $ff-folder-2:              octicons;
+  $ff-name-2:                octicons;
+
+  // web/fonts 3
+  $ff-family-3:              Source Sans Pro;
+  $ff-folder-3:              SourceSansPro;
+  $ff-name-3:                SourceSansPro;

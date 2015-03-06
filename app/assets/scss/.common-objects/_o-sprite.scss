@@ -1,0 +1,48 @@
+  /* ==========================================================================
+   Common Object - Sprite
+
+   * make spirte positions in site styles
+
+   css:
+   -----
+   .o-sprite{
+      width: 16px;
+      height:16px;
+      background-image:url();
+   }
+
+   .o-sprite__red-square)    { background-position: 0 0; }
+   .o-sprite__blue-circle)   { background-position: -16px 0; }
+   .o-sprite__orange-sqaure) { background-position: -16px -16px; }
+   .o-sprite__green-circle)  { background-position: 0 -16px; }
+
+   ========================================================================== */
+
+  // object
+  .o-sprite {
+    position:relative;
+    top:-1px;
+    display:inline-block;
+    overflow:hidden;
+    vertical-align:middle;
+    text-align:center;
+    font-weight:normal;
+    font-style:normal;
+    line-height:1;
+    zoom:1;
+    *text-indent:-9999px;
+
+    // * make spirte image + width & size in site styles
+    //
+    // background-image
+    // width
+    // height
+
+    &:before{
+      display:block;
+      width:0;
+      height:100%;
+      content:"";
+    }
+
+  }

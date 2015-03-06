@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Global Variables
+   ========================================================================== */
+
+  // normailze legacy
+  $legacy_browser_support:                false;
+
+  // debug
+  $use-debug-outlines:                    false;
+  $use-debug-media-query:                 false;
+  $use-debug-issues:                      false;
+
+  // reset
+  $use-reset-general:                     true;
+  $use-reset-myers:                       false;
+
+
+  // base
+  $use-base-root:                         true;
+  $use-base-border-box:                   true;
+  $use-base-selection:                    true;
+  $use-base-global-mb:                    true;
+  $use-base-imports:                      true;
+  $use-base-links:                        true;
+  $use-base-text:                         true;
+  $use-base-lists:                        true;
+  $use-base-quotes:                       true;
+  $use-base-media:                        true;
+  $use-base-code:                         true;
+  $use-base-forms:                        true;
+
+
+  // delete or add icons folder
+  $use-icons-feather:                     true;
+  $use-icons-octicons:                    true;
+
+
+  // modules
+  $use-modules-fluid-social:              true;
+  $use-modules-owl-carousel:              true;
+  $use-modules-fit-text:                  true;
+  $use-modules-fit-vids:                  true;
+  $use-modules-fluid-box:                 true;
+  $use-modules-disqus:                    true;
+
+
+  // utilities
+  $use-utilities-island:                  true;
+  $use-utilities-widths:                  true;
+  $use-utilities-extends:                 true;
+  $use-utilities-spaces:                  true;
+  $use-utilities-display:                 true;
+  $use-utilities-print:                   true;
+  $use-utilities-text:                    true;
+  $use-utilities-font-styles:             true;
+  $use-utilities-font-sizes:              true;
+  $use-utilities-font-weights:            true;
+  $use-utilities-mixins:                  true;
+  $use-utilities-overflow:                true;
+  $use-utilities-floats:                  true;
+  $use-utilities-position:                true;
+  $use-utilities-rounded:                 true;
+  $use-utilities-states:                  true;
+  $use-utilities-vertical-align:          true;
+  $use-utilities-white-space:             true;
+  $use-utilities-colours:                 true;

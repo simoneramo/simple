@@ -1,0 +1,50 @@
+$use-objects-loaders:	true !default;
+
+@if $use-objects-loaders == true{
+	/* ==========================================================================
+   Object - CSS Loaders
+   ========================================================================== */
+
+  @-webkit-keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  @include object(o-spinner) {
+    animation: spinner 1500ms infinite linear;
+    border-radius: 0.5em;
+    box-shadow: 1.5em 0 0 0,
+                1.1em 1.1em 0 0,
+                0 1.5em 0 0,
+                -1.1em 1.1em 0 0,
+                -1.5em 0 0 0,
+                -1.1em -1.1em 0 0,
+                0 -1.5em 0 0,
+                1.1em -1.1em 0 0;
+    display: inline-block;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    margin: 1.5em;
+    overflow: hidden;
+    text-indent: 100%;
+    color: $c-object;
+  }
+
+}//endif

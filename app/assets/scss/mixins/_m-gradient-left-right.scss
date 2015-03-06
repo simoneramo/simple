@@ -1,0 +1,10 @@
+@mixin gradient-left-right($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, right top, from($fromColor), to($toColor));
+  background-image: -webkit-linear-gradient(left, $fromColor, $toColor);
+  background-image:    -moz-linear-gradient(left, $fromColor, $toColor);
+  background-image:     -ms-linear-gradient(left, $fromColor, $toColor);
+  background-image:      -o-linear-gradient(left, $fromColor, $toColor);
+  background-image:         linear-gradient(left, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}

@@ -1,0 +1,73 @@
+$use-objects-matrix:	true !default;
+
+@if $use-objects-matrix == true{
+	/* ==========================================================================
+   Object - Matrix
+   ========================================================================== */
+
+  // extend from o-block-list from o-block-list.scss
+  // extend --bordered by extending .\--bordered from o-block-list.scss
+  .o-matrix {
+		@include clearfix;
+    @include list-unstyled;
+    border-left: 1px solid $c-object;
+		> li{
+			float:left;
+      padding: $space;
+      border: 0 solid $c-object;
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      margin-bottom: -1px; // double border hack
+		}
+
+
+		// Apply these classes alongside the `.o-matrix` classes on
+   	// lists to determine how wide their columns are.
+	  .o-matrix--two {
+	  	> li{
+	      @extend %e-w-1\/2;
+	       &.o-matrix__full {
+					@extend %e-w-1\/1;
+				}
+	    }
+	  }
+
+	  .o-matrix--three {
+	  	> li{
+	      @extend %e-w-1\/3;
+	       &.o-matrix__full {
+					@extend %e-w-1\/1;
+				}
+	    }
+	  }
+
+	  .o-matrix--four {
+	  	> li{
+	      @extend %e-w-1\/4;
+	       &.o-matrix__full {
+					@extend %e-w-1\/1;
+				}
+	    }
+	  }
+
+	  .o-matrix--five {
+	  	> li{
+	      @extend %e-w-1\/5;
+	      &.o-matrix__full {
+					@extend %e-w-1\/1;
+				}
+	    }
+	  }
+
+
+  	// extend from o-block-list.scss
+    // what is the matrix block space?? default: $space;
+    // change here if different : @include link-block-space(2);
+    .o-matrix__link {
+      @include link-block-space();
+    }
+
+	}
+
+}//endif

@@ -1,0 +1,40 @@
+$use-base-text: true !default;
+
+@if $use-base-text == true{
+/* ==========================================================================
+   Base - Text
+   ========================================================================== */
+
+  @include headings(1, 6) {
+    font-family: $ff-heading-base;
+    color: $c-heading-1;
+  }
+
+  // default italic
+  address{
+    font-style: normal;
+  }
+
+  // make $f-small
+  small{
+    font-size: $fs-h7;
+  }
+
+  // set default space
+  sup{ top: -$space-halve; }
+  sub{ bottom: -$space-halve; }
+
+  // Apply underlines to inserted
+  // remove underlines from potentially troublesome elements
+  ins, u{
+    border-bottom:1px solid;
+    text-decoration: none;
+  }
+
+  // extra info give on :hover
+  abbr[title],
+  dfn[title] {
+      cursor: help;
+  }
+
+}//end if

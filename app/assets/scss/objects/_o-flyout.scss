@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Common Object - Flyout
+   ========================================================================== */
+
+	.o-flyout {
+		position:relative;
+		overflow:hidden;
+
+		.o-flyout__content {
+			position:absolute;
+			top:100%;
+			left:-9999px;
+		}
+
+		&:hover{
+			overflow:visible;
+			.o-flyout__content {
+				left:0;
+			}
+		}
+	}
+
+
+	.o-flyout--left {
+		@extend .o-flyout;
+		&:hover{
+			.o-flyout__content {
+				top:0;
+				left:100%;
+			}
+		}
+	}

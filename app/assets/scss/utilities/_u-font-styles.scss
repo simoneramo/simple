@@ -1,0 +1,13 @@
+$use-utilities-font-styles:  true !default;
+
+@if $use-utilities-font-styles == true{
+/* ==========================================================================
+   Utilities Font Styles
+   ========================================================================== */
+
+  // font styles
+  .u-fs-normal   { font-style: normal; }
+  .u-fs-italic   { font-style: italic; }
+  .u-fs-oblique  { font-style: oblique; }
+
+}//end if

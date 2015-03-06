@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Mixin - Vertically align an element
+
+   // http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css
+
+   css:
+   -----
+   .{class-name} {
+      height: {needed};
+      text-align: {center, right};
+      p {
+        @include vertical-align;
+      }
+   }
+
+   ========================================================================== */
+
+@mixin vertical-align{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

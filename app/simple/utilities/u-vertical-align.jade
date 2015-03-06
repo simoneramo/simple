@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    include ../../_partials/site/compatibility-mode
+    title Simple Utilities Vertical Align
+    include ../../_partials/site/description
+    include ../../_partials/site/meta-viewport
+
+    include ../../_partials/site/favicon
+    //- or
+
+    //- include ../../_partials/site/favicon-png
+
+    //-include ../../_partials/site/metaquery
+
+    //- include ../../_partials/site/icon-chrome-android
+
+    //- include ../../_partials/site/icon-safari-ios
+
+    //- include ../../_partials/site/icon-tile-win8
+
+    //- include ../../_partials/site/if-mobile-url
+
+    link(type='text/css', rel='stylesheet', href='../../assets/css/main.css')
+  body.s-simple
+    //- include:markdown ../../_partials/article.md
+    .l-simple-container
+      include ../../_partials/simple-partials/utilities/vertical-align
+
+    include ../../_partials/site/scripts
+    include ../../_partials/site/analytics

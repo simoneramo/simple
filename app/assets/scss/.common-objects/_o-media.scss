@@ -1,0 +1,27 @@
+  /* ==========================================================================
+   Object - Media
+   ========================================================================== */
+
+  .o-media {
+    @include clearfix;
+    display: block;
+  }
+
+    .o-media__image {
+      float: left;
+      padding-right: $space-2;
+    }
+
+    .o-media__body {
+      overflow: hidden;
+    }
+
+  // make media right
+  .o-media--right {
+    @extend .o-media;
+    .o-media__image{
+      float:right;
+      padding-right: 0;
+      padding-left: $space-2;
+    }
+  }

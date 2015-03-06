@@ -1,0 +1,63 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    include ../../_partials/site/compatibility-mode
+    title Simple Utilities
+    include ../../_partials/site/description
+    include ../../_partials/site/meta-viewport
+
+    include ../../_partials/site/favicon
+    //- or
+
+    //- include ../../_partials/site/favicon-png
+
+    //-include ../../_partials/site/metaquery
+
+    //- include ../../_partials/site/icon-chrome-android
+
+    //- include ../../_partials/site/icon-safari-ios
+
+    //- include ../../_partials/site/icon-tile-win8
+
+    //- include ../../_partials/site/if-mobile-url
+
+    link(type='text/css', rel='stylesheet', href='../../assets/css/main.css')
+  body.s-simple
+    .l-simple-container(class='u-s-mt-4')
+      h1.u-fs-h1x.u-ta-center(class='u-s-mb-1/6') Simple Css
+      ul(class='o-nav  o-nav--banner  u-s-mb-4')
+        li
+          a(class='o-btn' href='../base') base
+        li
+          a(class='o-btn' href='../objects') objects
+        li
+          a(class='o-btn  u-s-active' href='../utilities') utilities
+        li
+          a(class='o-btn' href='../sink') sink
+        li
+          a(class='o-btn' href='../config') config
+        li
+          a(class='o-btn' href='../modules') modules
+        li
+          a(class='o-btn' href='../mixins') mixins
+
+      include ../../_partials/simple-partials/utilities/colours
+      include ../../_partials/simple-partials/utilities/display
+      include ../../_partials/simple-partials/utilities/position
+      include ../../_partials/simple-partials/utilities/floats
+      include ../../_partials/simple-partials/utilities/text
+      include ../../_partials/simple-partials/utilities/font-sizes
+      include ../../_partials/simple-partials/utilities/font-styles
+      include ../../_partials/simple-partials/utilities/font-weights
+      include ../../_partials/simple-partials/utilities/rounded
+      include ../../_partials/simple-partials/utilities/vertical-align
+      include ../../_partials/simple-partials/utilities/alert
+      include ../../_partials/simple-partials/utilities/widths
+      include ../../_partials/simple-partials/utilities/spaces
+      include ../../_partials/simple-partials/utilities/island
+      include ../../_partials/simple-partials/utilities/web-fonts
+      include ../../_partials/simple-partials/utilities/extends
+
+    include ../../_partials/site/scripts
+    include ../../_partials/site/analytics

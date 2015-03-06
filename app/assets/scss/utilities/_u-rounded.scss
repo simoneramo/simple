@@ -1,0 +1,20 @@
+$use-utilities-rounded:  true !default;
+
+@if $use-utilities-rounded == true{
+/* ==========================================================================
+   Utilities Rounded
+   ========================================================================== */
+
+  .u-r-circle { border-radius: 100%;}
+  .u-r-all    { border-radius: $utilities-round; }
+  .u-r-top    { border-radius: $utilities-round $utilities-round 0 0; }
+  .u-r-left   { border-radius: $utilities-round 0 0 $utilities-round; }
+  .u-r-right  { border-radius: 0 $utilities-round $utilities-round 0; }
+  .u-r-bottom { border-radius: 0 0 $utilities-round $utilities-round; }
+  .u-r-tl     { border-radius: $utilities-round 0 0 0; }
+  .u-r-tr     { border-radius: 0 $utilities-round 0 0; }
+  .u-r-br     { border-radius: 0 0 $utilities-round 0; }
+  .u-r-bl     { border-radius: 0 0 0 $utilities-round ; }
+  .u-r-reset  { border-radius: 0; }
+
+}//end if

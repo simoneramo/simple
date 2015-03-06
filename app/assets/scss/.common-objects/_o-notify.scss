@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Common Objects - Alert
+   ========================================================================== */
+
+  .o-alert {
+    background-color: $c-object;
+    padding: $space;
+
+    @if $use-base-global-mb == true{
+      @include mb;
+
+      p:last-child{
+        @include reset-mb;
+      }
+    }
+  }
+
+  .o-alert--success    { @extend %e-bc-success; }
+  .o-alert--info       { @extend %e-bc-info; }
+  .o-alert--warning    { @extend %e-bc-warning; }
+  .o-alert--danger     { @extend %e-bc-danger; }
+  .o-alert--error      { @extend %e-bc-error; }
+  .o-alert--disable    { @extend %e-s-disable; }

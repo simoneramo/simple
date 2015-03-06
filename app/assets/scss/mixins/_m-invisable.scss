@@ -1,0 +1,10 @@
+/* ==========================================================================
+   Mixin - invisible
+
+   // Hide visually and from screen readers, but maintain layout
+
+   ========================================================================== */
+
+  @mixin invisible {
+      visibility: hidden;
+  }

@@ -1,0 +1,36 @@
+$use-utilities-font-sizes:  true !default;
+
+@if $use-utilities-font-sizes == true{
+/* ==========================================================================
+   Utilities Fonts Sizes
+   ========================================================================== */
+
+  // big heading sizes
+  .u-fs-h1x        { font-size: $fs-h1x; }
+  .u-fs-h2x        { font-size: $fs-h2x; }
+  .u-fs-h3x        { font-size: $fs-h3x; }
+  .u-fs-h4x        { font-size: $fs-h4x; }
+  .u-fs-h5x        { font-size: $fs-h5x; }
+  .u-fs-h6x        { font-size: $fs-h6x; }
+
+  // h1 - h6
+  .u-fs-h1         { font-size: $fs-h1; }
+  .u-fs-h2         { font-size: $fs-h2; }
+  .u-fs-h3         { font-size: $fs-h3; }
+  .u-fs-h4         { font-size: $fs-h4; }
+  .u-fs-h5         { font-size: $fs-h5; }
+  .u-fs-h6         { font-size: $fs-h6; }
+
+  // helper type
+  .u-fs-base       { font-size: $fs-base; }
+  .u-fs-lead       { font-size: $fs-lead; }
+  .u-fs-half       { font-size: $fs-half; }
+  .u-fs-inherit    { font-size: inherit; }
+
+  // small font sizes
+  .u-fs-h7         { font-size: $fs-h7; }
+  .u-fs-h8         { font-size: $fs-h8; }
+  .u-fs-h9         { font-size: $fs-h9; }
+  .u-fs-h10        { font-size: $fs-h10; }
+
+}//end if

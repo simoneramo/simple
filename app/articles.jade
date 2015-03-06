@@ -1,0 +1,50 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    include _partials/site/compatibility-mode
+    title Simple Boilerplate - Articles Page
+    include _partials/site/description
+    include _partials/site/meta-viewport
+
+    include _partials/site/favicon
+    //- or
+
+    //- include _partials/site/favicon-png
+
+    //-include _partials/site/metaquery
+
+    //- include _partials/site/icon-chrome-android
+
+    //- include _partials/site/icon-safari-ios
+
+    //- include _partials/site/icon-tile-win8
+
+    //- include _partials/site/if-mobile-url
+
+    link(type='text/css', rel='stylesheet', href='assets/css/main.css')
+
+  body
+    p Articles Page
+    br
+    a(href='index.html') Index Page
+    br
+    a(href='about.html') About Page
+    br
+    a(href='articles.html') Articles Page
+    br
+    a(href='article-post.html') Articles Post Page
+    br
+    a(href='404.html') 404 Page
+    br
+    a(href='contact.html') Contact Page
+    br
+    include _partials/site/partials-markdown-example.md
+    include _partials/site/partials-html-example.html
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src=""><\\/script>')
+    script(src='/assets/scripts/scripts.min.js')
+
+    include _partials/site/analytics

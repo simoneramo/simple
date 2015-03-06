@@ -1,0 +1,15 @@
+  /* ==========================================================================
+   Common Object - Split
+   ========================================================================== */
+
+  .o-split {
+    @include list-unstyled;
+    @include clearfix;
+    text-align:right;
+  }
+
+    .o-split__title {
+      text-align:left;
+      float:left;
+      clear:left;
+    }

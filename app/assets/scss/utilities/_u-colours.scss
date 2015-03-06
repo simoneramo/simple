@@ -1,0 +1,210 @@
+$use-utilities-colours:  true !default;
+
+@if $use-utilities-colours == true{
+/* ==========================================================================
+   Utilities - Colours
+   ========================================================================== */
+
+  // custom colours
+  .u-bgc-white             { background-color: $c-white; }
+  .u-bgc-silver            { background-color: $c-silver; }
+  .u-bgc-gray              { background-color: $c-gray; }
+  .u-bgc-black             { background-color: $c-black; }
+  .u-bgc-red               { background-color: $c-red; }
+  .u-bgc-maroon            { background-color: $c-maroon; }
+  .u-bgc-orange            { background-color: $c-orange; }
+  .u-bgc-yellow            { background-color: $c-yellow; }
+  .u-bgc-olive             { background-color: $c-olive; }
+  .u-bgc-lime              { background-color: $c-lime; }
+  .u-bgc-green             { background-color: $c-green; }
+  .u-bgc-aqua              { background-color: $c-aqua; }
+  .u-bgc-teal              { background-color: $c-teal; }
+  .u-bgc-blue              { background-color: $c-blue; }
+  .u-bgc-navy              { background-color: $c-navy; }
+  .u-bgc-fuchsia           { background-color: $c-fuchsia; }
+  .u-bgc-purple            { background-color: $c-purple; }
+  .u-bgc-pink              { background-color: $c-pink; }
+
+  // custom bbackground
+  .u-c-white              { color: $c-white; }
+  .u-c-silver             { color: $c-silver; }
+  .u-c-gray               { color: $c-gray; }
+  .u-c-black              { color: $c-black; }
+  .u-c-red                { color: $c-red; }
+  .u-c-maroon             { color: $c-maroon; }
+  .u-c-orange             { color: $c-orange; }
+  .u-c-yellow             { color: $c-yellow; }
+  .u-c-olive              { color: $c-olive; }
+  .u-c-lime               { color: $c-lime; }
+  .u-c-green              { color: $c-green; }
+  .u-c-aqua               { color: $c-aqua; }
+  .u-c-teal               { color: $c-teal; }
+  .u-c-blue               { color: $c-blue; }
+  .u-c-navy               { color: $c-navy; }
+  .u-c-fuchsia            { color: $c-fuchsia; }
+  .u-c-purple             { color: $c-purple; }
+  .u-c-pink               { color: $c-pink; }
+
+  // backgrounds
+  .u-bgc-1                 { background-color: $c-bgc-1; }
+  .u-bgc-2                 { background-color: $c-bgc-2; }
+  .u-bgc-3                 { background-color: $c-bgc-3; }
+
+  // links colours
+  .u-c-link               { color: $c-link; }
+  .u-c-hover              { color: $c-link-hover; }
+  .u-c-active             { color: $c-link-active; }
+  .u-c-visited            { color: $c-link-visited; }
+
+  // links background
+  .u-bgc-link              { background-color: $c-link; }
+  .u-bgc-hover             { background-color: $c-link-hover; }
+  .u-bgc-active            { background-color: $c-link-active; }
+  .u-bgc-visited           { background-color: $c-link-visited; }
+
+  // headings colours
+  .u-c-h-1                { color: $c-heading-1; }
+  .u-c-h-2                { color: $c-heading-2; }
+  .u-c-h-3                { color: $c-heading-3; }
+
+  // type colours
+  .u-c-t-1                { color: $c-type-1; }
+  .u-c-t-2                { color: $c-type-2; }
+  .u-c-t-3                { color: $c-type-3; }
+
+  // buttons
+  .u-c-btn-1              { color: $c-btn-1; }
+  .u-bgc-btn-1             { background-color: $c-bgc-btn-1; }
+
+  .u-c-btn-2              { color: $c-btn-2; }
+  .u-bgc-btn-2             { background-color: $c-bgc-btn-2; }
+
+  // code
+  .u-c-code               { color: $c-code; }
+  .u-bgc-code              { background-color: $c-bgc-code; }
+
+    // selection
+  .u-c-select             { color: $c-selection; }
+  .u-bgc-select            { color: $c-bgc-selection; }
+
+    // forms
+  .u-c-form-1             { color: $c-bgc-form-1; }
+  .u-c-form-2             { color: $c-bgc-form-2; }
+  .u-bgc-form-input        { background-color: $c-form-input; }
+  .u-bgc-form-hover        { background-color: $c-form-hover; }
+  .u-bgc-form-active       { background-color: $c-form-active; }
+  .u-bgc-form-focus        { background-color: $c-form-focus; }
+
+  // brands colours
+  .u-c-google             { color: $c-google; }
+  .u-c-facebook           { color: $c-facebook; }
+  .u-c-twitter            { color: $c-twitter; }
+  .u-c-linkedin           { color: $c-linkedin; }
+  .u-c-dribble            { color: $c-dribble; }
+  .u-c-instagram          { color: $c-instagram; }
+  .u-c-googleplus         { color: $c-googleplus; }
+  .u-c-behance            { color: $c-behance; }
+  .u-c-gimmebar           { color: $c-gimmebar; }
+  .u-c-github             { color: $c-github; }
+  .u-c-tumblr             { color: $c-tumblr; }
+  .u-c-youtube            { color: $c-youtube; }
+  .u-c-vine               { color: $c-vine; }
+  .u-c-kickstarter        { color: $c-kickstarter; }
+  .u-c-dropbox            { color: $c-dropbox; }
+  .u-c-rss                { color: $c-rss; }
+  .u-c-facebook           { color: $c-facebook; }
+  .u-c-codepen            { color: $c-codepen; }
+  .u-c-foursquare         { color: $c-foursquare; }
+  .u-c-soundcloud         { color: $c-soundcloud; }
+  .u-c-wordpress          { color: $c-wordpress; }
+  .u-c-tumblr             { color: $c-tumblr; }
+  .u-c-blogger            { color: $c-blogger; }
+  .u-c-squarespace        { color: $c-squarespace; }
+  .u-c-joomla             { color: $c-joomla; }
+  .u-c-drupal             { color: $c-drupal; }
+  .u-c-typepad            { color: $c-typepad; }
+  .u-c-expression-engine  { color: $c-expression-engine; }
+  .u-c-kirby              { color: $c-kirby; }
+  .u-c-moveabletype       { color: $c-moveabletype; }
+  .u-c-disqus             { color: $c-disqus; }
+  .u-c-html               { color: $c-html; }
+  .u-c-yahoo              { color: $c-yahoo; }
+  .u-c-vimeo              { color: $c-vimeo; }
+  .u-c-flickr             { color: $c-flickr; }
+  .u-c-pinterest          { color: $c-pinterest; }
+  .u-c-google-drive       { color: $c-google-drive; }
+  .u-c-android            { color: $c-android; }
+  .u-c-apple              { color: $c-apple; }
+  .u-c-delicious          { color: $c-delicious; }
+  .u-c-forrst             { color: $c-forrst; }
+  .u-c-paypal             { color: $c-paypal; }
+  .u-c-lastfm             { color: $c-lastfm; }
+  .u-c-skype              { color: $c-skype; }
+  .u-c-digg               { color: $c-digg; }
+  .u-c-swarm              { color: $c-swarm; }
+  .u-c-etsy               { color: $c-etsy; }
+
+    // brands background
+  .u-bgc-google            { background-color: $c-google; }
+  .u-bgc-facebook          { background-color: $c-facebook; }
+  .u-bgc-twitter           { background-color: $c-twitter; }
+  .u-bgc-linkedin          { background-color: $c-linkedin; }
+  .u-bgc-dribble           { background-color: $c-dribble; }
+  .u-bgc-instagram         { background-color: $c-instagram; }
+  .u-bgc-googleplus        { background-color: $c-googleplus; }
+  .u-bgc-behance           { background-color: $c-behance; }
+  .u-bgc-gimmebar          { background-color: $c-gimmebar; }
+  .u-bgc-github            { background-color: $c-github; }
+  .u-bgc-tumblr            { background-color: $c-tumblr; }
+  .u-bgc-youtube           { background-color: $c-youtube; }
+  .u-bgc-vine              { background-color: $c-vine; }
+  .u-bgc-kickstarter       { background-color: $c-kickstarter; }
+  .u-bgc-dropbox           { background-color: $c-dropbox; }
+  .u-bgc-rss               { background-color: $c-rss; }
+  .u-bgc-facebook          { background-color: $c-facebook; }
+  .u-bgc-codepen           { background-color: $c-codepen; }
+  .u-bgc-foursquare        { background-color: $c-foursquare; }
+  .u-bgc-soundcloud        { background-color: $c-soundcloud; }
+  .u-bgc-wordpress         { background-color: $c-wordpress; }
+  .u-bgc-tumblr            { background-color: $c-tumblr; }
+  .u-bgc-blogger           { background-color: $c-blogger; }
+  .u-bgc-squarespace       { background-color: $c-squarespace; }
+  .u-bgc-joomla            { background-color: $c-joomla; }
+  .u-bgc-drupal            { background-color: $c-drupal; }
+  .u-bgc-typepad           { background-color: $c-typepad; }
+  .u-bgc-expression-engine { background-color: $c-expression-engine; }
+  .u-bgc-kirby             { background-color: $c-kirby; }
+  .u-bgc-moveabletype      { background-color: $c-moveabletype; }
+  .u-bgc-disqus            { background-color: $c-disqus; }
+  .u-bgc-html              { background-color: $c-html; }
+  .u-bgc-yahoo             { background-color: $c-yahoo; }
+  .u-bgc-vimeo             { background-color: $c-vimeo; }
+  .u-bgc-flickr            { background-color: $c-flickr; }
+  .u-bgc-pinterest         { background-color: $c-pinterest; }
+  .u-bgc-google-drive      { background-color: $c-google-drive; }
+  .u-bgc-android           { background-color: $c-android; }
+  .u-bgc-apple             { background-color: $c-apple; }
+  .u-bgc-delicious         { background-color: $c-delicious; }
+  .u-bgc-forrst            { background-color: $c-forrst; }
+  .u-bgc-paypal            { background-color: $c-paypal; }
+  .u-bgc-lastfm            { background-color: $c-lastfm; }
+  .u-bgc-skype             { background-color: $c-skype; }
+  .u-bgc-digg              { background-color: $c-digg; }
+  .u-bgc-swarm             { background-color: $c-swarm; }
+  .u-bgc-etsy              { background-color: $c-etsy; }
+
+    // notify background
+  .u-bgc-success           { background-color: $c-success; }
+  .u-bgc-info              { background-color: $c-info; }
+  .u-bgc-warning           { background-color: $c-warning; }
+  .u-bgc-danger            { background-color: $c-danger; }
+  .u-bgc-error             { background-color: $c-error; }
+
+    // notify colours
+  .u-c-success            { color: $c-success; }
+  .u-c-info               { color: $c-info; }
+  .u-c-warning            { color: $c-warning; }
+  .u-c-danger             { color: $c-danger; }
+  .u-c-error              { color: $c-error; }
+
+}//end if

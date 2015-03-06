@@ -1,0 +1,57 @@
+$use-objects-flag: true !default;
+
+@if $use-objects-flag == true{
+/* ==========================================================================
+   Object - Flag
+   ========================================================================== */
+
+  // object
+  @include object(o-flag) {
+    display: table;
+    @extend %e-w-1\/1;
+
+    // element
+    @include element(body) {
+      @extend %e-w-1\/1;
+      display: table-cell;
+      vertical-align: middle;
+
+      @include modifier(top) {
+        vertical-align: top;
+      }
+
+      @include modifier(bottom) {
+        vertical-align: bottom;
+      }
+    }
+
+    // element
+    @include element(image) {
+      padding-right: $space-2;
+      display: table-cell;
+      vertical-align: middle;
+      > img {
+        display: block;
+        max-width: none;
+      }
+
+      @include modifier(top) {
+        vertical-align: top;
+      }
+
+      @include modifier(bottom) {
+        vertical-align: bottom;
+      }
+    }
+
+    // modifier
+    @include modifier(right) {
+      .o-flag__image{
+        padding-right: 0;
+        padding-left: $space-2;
+      }
+    }
+
+  }
+
+}//end if
